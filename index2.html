@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New RSJ Public School</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="images/vasant-vihar/logoFull.png" alt="" />
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+        <nav>
+          <a href="#" onclick="showPage('home')">Home</a>
+          <div class="nav-item">
+            <a href="#">About</a>
+            <div class="dropdown">
+              <a href="#" onclick="showPage('about-us')">About Us</a>
+              <a href="#" onclick="showPage('annual-planner')"
+                >Annual Planner</a
+              >
+              <a href="#" onclick="showPage('school-song')">School Song</a>
+              <a href="#" onclick="showPage('saturday-song')">Saturday Song</a>
+              <a href="#" onclick="showPage('uniform')">Uniform</a>
+              <a href="#" onclick="showPage('syllabus')">Syllabus</a>
+              <a href="#" onclick="showPage('holidays')">Holiday List</a>
+            </div>
+          </div>
+          <a href="#" onclick="showPage('facilities')">Facilities</a>
+          <a href="#" onclick="showPage('gallery')">Gallery</a>
+          <a href="#" onclick="showPage('contact')">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div id="home" class="page active">
+        <div class="hero">
+          <!-- Previous hero content -->
+          <h1>Welcome to New RSJ Public School</h1>
+          <p>
+            New R.S.J Public School had a very humble beginning in the year
+            2001. The school now has well splendid campus at the Recreational
+            Study Junction, Ustapur-Mahmoodabad, chhatnag road, Jhunsi,
+            Allahabad. Since its inception, the school has emboldened the ideal
+            of it’s being a secular place of learning and has always remained
+            open for all the sections of society.
+          </p>
+        </div>
+        <div class="branch-selector">
+          <button class="branch-btn" onclick="switchBranch(1)">
+            <a href="/index.html">Chhatnag</a>
+          </button>
+          <button class="branch-btn active" onclick="switchBranch(2)">
+            <a href="/index2.html">Vasant Vihar</a>
+          </button>
+          <button class="branch-btn" onclick="switchBranch(3)">
+            <a href="/index3.html"> Sahibabad </a>
+          </button>
+        </div>
+
+        <div id="branch1" class="branch-content">
+          <div class="hero">
+            <h2>Chhatnag</h2>
+            <!-- <p>
+              Our flagship campus in the heart of the city, offering
+              state-of-the-art facilities and a diverse learning environment.
+            </p> -->
+          </div>
+          <img
+            src="/"
+            alt="Branch 1 Campus"
+            style="
+              width: 100%;
+              max-width: 800px;
+              margin: 2rem auto;
+              display: block;
+              border-radius: 8px;
+            "
+          />
+        </div>
+
+        <div id="branch2" class="branch-content active">
+          <div class="hero">
+            <h2>Vasant Vihar Campus</h2>
+            <!-- <p>A modern campus focused on technology and innovation, preparing students for the digital future.</p> -->
+          </div>
+          <img
+            src="/images/vasant-vihar/school building.jpg"
+            alt="Branch 2 Campus"
+            style="
+              width: 100%;
+              max-width: 800px;
+              margin: 2rem auto;
+              display: block;
+              border-radius: 8px;
+            "
+          />
+        </div>
+
+        <div id="branch3" class="branch-content">
+          <div class="hero">
+            <h2>Sahibabad</h2>
+            <p>
+              A creative hub dedicated to nurturing artistic talent and cultural
+              expression.
+            </p>
+          </div>
+          <img
+            src="/api/placeholder/800/400"
+            alt="Branch 3 Campus"
+            style="
+              width: 100%;
+              max-width: 800px;
+              margin: 2rem auto;
+              display: block;
+              border-radius: 8px;
+            "
+          />
+        </div>
+        <div class="cards-container">
+          <div class="nav-card" onclick="showPage('timetable')">
+            <h3>Time Table</h3>
+            <p>View class schedules and daily routines</p>
+          </div>
+
+          <div class="nav-card" onclick="window.open('/sample.pdf', '_blank')">
+            <h3>Mobile App</h3>
+            <p>Download our mobile app for easy access</p>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-slide">
+                <img
+                  src="images/vasant-vihar/school building.jpg"
+                  alt="School campus"
+                />
+                <div class="carousel-caption">Our Beautiful Campus</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/vasant-vihar/library.jpg" alt="Library" />
+                <div class="carousel-caption">Modern Library Facilities</div>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/vasant-vihar/science club act..jpg"
+                  alt="Science lab"
+                />
+                <div class="carousel-caption">Science Labs</div>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/vasant-vihar/sports day.jpg"
+                  alt="Sports facilities"
+                />
+                <div class="carousel-caption">Sports and Recreation</div>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/vasant-vihar/smart classroom.jpg"
+                  alt="Classroom"
+                />
+                <div class="carousel-caption">Interactive Classrooms</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/vasant-vihar/dance.jpg" alt="Art studio" />
+                <div class="carousel-caption">Creative Arts Studio</div>
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="images/vasant-vihar/Computer Lab.jpg"
+                  alt="Computer lab"
+                />
+                <div class="carousel-caption">Computer Laboratory</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/vasant-vihar/social club.jpg" alt="Garden" />
+                <div class="carousel-caption">Social Club</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/vasant-vihar/pt display.jpg" alt="Garden" />
+                <div class="carousel-caption">School Ground</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-nav"></div>
+          <div class="bento-grid">
+            <div class="bento-item principal-message">
+              <img
+                src="images/vasant-vihar/school building.jpg"
+                alt="Principal"
+                class="principal-img"
+              />
+              <div>
+                <h2 class="section-title">
+                  WELCOME TO NEW R.S.J. PUBLIC SCHOOL
+                </h2>
+                <p>
+                  New R.S.J. (Recreational Study Junction) Public School at
+                  Vasant Viahr Jhusi, Allahabad had a very humble begging in the
+                  year 2001. The School Mainly caters to the requirments of
+                  student who requier pre-primery education. The School run into
+                  two shifts. The first shift caters to pre pimeary requirment
+                  and second shift caters to class I to V requirment.
+                </p>
+              </div>
+            </div>
+
+            <div class="bento-item about-school" style="text-align: center">
+              <h2 class="section-title">Shift One</h2>
+              <p style="text-align: center">
+                NUR - UKG
+                <br />
+                8:00 AM - 11:15 AM
+              </p>
+              <h2
+                class="section-title"
+                style="margin-top: 5px; margin-bottom: 5px"
+              >
+                Shift Two
+              </h2>
+              <p>
+                I - V
+                <br />
+                11:15 AM - 4:15 PM
+              </p>
+            </div>
+
+            <div class="bento-item school-motto">
+              <div>
+                <h2 class="section-title">LANGUAGES LABS</h2>
+                <p>
+                  The School operates language lab through the make shift area
+                  of the library with.
+                </p>
+              </div>
+            </div>
+
+            <div class="bento-item news-notices">
+              <h2 class="section-title">News & Notices</h2>
+              <div class="news-container">
+                <div class="news-ticker">
+                  <div class="news-item">
+                    <h3>Annual Sports Day</h3>
+                    <p>Scheduled for March 15th, 2025</p>
+                  </div>
+                  <div class="news-item">
+                    <h3>Parent-Teacher Meeting</h3>
+                    <p>February 28th, 2025</p>
+                  </div>
+                  <div class="news-item">
+                    <h3>Science Fair</h3>
+                    <p>Registration open until March 1st</p>
+                  </div>
+                  <div class="news-item">
+                    <h3>Holiday Notice</h3>
+                    <p>Spring break: March 20-27</p>
+                  </div>
+                  <div class="news-item">
+                    <h3>Academic Excellence Awards</h3>
+                    <p>Ceremony on April 5th</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bento-item toppers">
+              <div class="toppers-carousel">
+                <div class="topper-slide active">
+                  <div class="topper-content">
+                    <div style="text-align: center">
+                      <h3 style="margin-bottom: 10px">SPORTS</h3>
+                      <p>
+                        The sports and games are integral part of education.
+                        Some of the outdoor sporting activities are cricket,
+                        football and basketball.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topper-slide">
+                  <div class="topper-content">
+                    <div style="text-align: center">
+                      <h3 style="margin-bottom: 10px">ARTS</h3>
+                      <p>
+                        School provides for it's students an appropriate venue
+                        for training, learning and applying different forms of
+                        arts like dance and music.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topper-slide">
+                  <div class="topper-content">
+                    <div style="text-align: center">
+                      <h3 style="margin-bottom: 10px">MUSIC LESSON</h3>
+                      <p>
+                        The School management have been successful in bringing
+                        technology in classrooms and arranging music lessons for
+                        children which not only helps them focus better but also
+                        provides a recreational break.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="timetable" class="page">
+        <div class="timetable-container">
+          <h1>Class Timetable</h1>
+          <div class="search-container">
+            <select id="classSelect">
+              <option value="">Select Class</option>
+              <option value="6">Class 6</option>
+              <option value="7">Class 7</option>
+              <option value="8">Class 8</option>
+              <option value="9">Class 9</option>
+              <option value="10">Class 10</option>
+              <option value="11">Class 11</option>
+              <option value="12">Class 12</option>
+            </select>
+            <button onclick="showTimetable()">Search</button>
+          </div>
+
+          <table class="timetable" id="timetableDisplay">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>8:00 - 8:45</td>
+                <td>Mathematics</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Social Studies</td>
+                <td>Language</td>
+              </tr>
+              <tr>
+                <td>8:45 - 9:30</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Mathematics</td>
+                <td>Language</td>
+                <td>Social Studies</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- About page -->
+      <div id="about-us" class="page">
+        <div class="about-page">
+          <img
+            src="images/vasant-vihar/school building.jpg"
+            alt="School Building"
+            class="about-image"
+          />
+          <h1>About New R.S.J. Public School</h1>
+          <p>
+            New R.S.J. (Recreational Study Junction) Public School at Vasant
+            Viahr Jhusi, Allahabad had a very humble begining in the year 2001.
+            The School Mainly caters to the requirments of student who requier
+            pre-primery education. The School run into two shifts. The first
+            shift caters to pre pimeary requirment and second shift caters to
+            class I to V requirment. Since it’s inception, the school has
+            emboldened the idea of it’s being a secular place of learning and
+            has always remined open for all the sections of sociaty. The
+            school’s moto ‘Forward Ever’ is the basic ideal under which the
+            ethics along with the parents and future requirments of all those
+            associated with the school, so that the march of Moving forward
+            continues to make success stories. The School is founded on the
+            basis of co-education system. School provides its students an
+            environment which facilitates then to reach beyond their social and
+            economic status.
+          </p>
+          <p>
+            The credit for the success, which the school has achieved in small
+            periods of time, gose to the staff of the school as well as the
+            students and their parents who have contributed immensely in
+            deriving new techniques of imparting education. It is the auspicious
+            nexus which has also contributed hugely to the growth of students in
+            extra curricular activities. The school has always been ready for
+            introduction of newer and better schemes for comprehensive and
+            balance development of its students. The school takes no grant in
+            aid from the government and depends entirely upon the money obtained
+            as fee from its pupil.
+          </p>
+          <!-- Add more content as needed -->
+        </div>
+      </div>
+
+      <!-- Annual planner page -->
+      <div id="annual-planner" class="page">
+        <div class="calendar-container">
+          <h1>Academic Calendar 2025-26</h1>
+          <div class="calendar">
+            <div class="calendar-nav">
+              <button onclick="previousMonth()">&lt;</button>
+              <h2 id="currentMonth">April 2025</h2>
+              <button onclick="nextMonth()">&gt;</button>
+            </div>
+            <div class="calendar-grid"></div>
+            <div class="calendar-events">
+              <h3>Events This Month</h3>
+              <div id="monthEvents"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- School song page -->
+      <div id="school-song" class="page">
+        <div class="about-page">
+          <h1 style="text-align: center">School Song</h1>
+          <p style="text-align: center; margin-top: 10px; line-height: 20px">
+            We Belong From New RJPS <br />
+            It’s Fine Grand and Marvelous <br />
+            In a Sound . Healthy Atmosphere <br />
+            We Learn. To Forward Ever, Forward Ever, Forward Ever, Forward Ever
+            <br />
+            Rich and Poor Come Together <br />
+            Lending all a Helping Hand <br />
+            People of all Regions <br />
+            As One Family We Stand <br />
+            We Belong From New RJPS <br />
+            It’s Fine Grand and Marvelou <br />
+            In a Sound . Healthy Atmosphere <br />
+            We Learn. To Forward Ever, Forward Ever, Forward Ever, Forward Ever
+            <br />
+            Our School is a Place of Learning <br />
+            But it Give as we Put in <br />
+            It Moulds and Builds our Character <br />
+            To Face the World and Win <br />
+            We Belong From New RJPS <br />
+            It’s Fine Grand and Marvelous. <br />
+          </p>
+
+          <!-- Add more content as needed -->
+        </div>
+      </div>
+
+      <!-- Saturday Song Page -->
+      <div id="saturday-song" class="page">
+        <div class="about-page">
+          <h1 style="text-align: center">Saturday Song</h1>
+          <p style="text-align: center; margin-top: 10px; line-height: 25px">
+            We shall overcome, <br />
+            We shall overcome, <br />
+            We shall overcome, some day. <br />
+            Oh, deep in my heart, <br />
+            I do believe <br />
+            We shall overcome, some day. <br />
+            We'll walk hand in hand, <br />
+            We'll walk hand in hand, <br />
+            We'll walk hand in <br />
+            hand, some day. <br />
+            Oh, deep in my heart, <br />
+            We shall live in peace, <br />
+            We shall live in peace, <br />
+            We shall live in peace, some day. <br />
+            Oh, deep in my heart, <br />
+            We shall all be free, <br />
+            We shall all be free, <br />
+            We shall all be free, some day. <br />
+            Oh, deep in my heart, <br />
+            We are not afraid, <br />
+            We are not afraid, <br />
+            We are not afraid, TODAY <br />
+            Oh, deep in my heart, <br />
+            We shall overcome, <br />
+            We shall overcome, <br />
+            We shall overcome, some day. <br />
+            Oh, deep in my heart, <br />
+            I do believe We shall overcome, some day <br />
+          </p>
+
+          <!-- Add more content as needed -->
+        </div>
+      </div>
+
+      <!-- School uniform page -->
+      <div class="uniform-section page" id="uniform">
+        <div class="uniform-dropdown">
+          <div class="uniform-header" onclick="toggleUniform()">
+            <span>School Uniform Guidelines</span>
+          </div>
+          <div class="uniform-content active" id="uniformContent">
+            <table class="uniform-table">
+              <tr>
+                <th colspan="2" class="season-header">
+                  Winter Uniform (November to February)
+                </th>
+              </tr>
+              <tr>
+                <th>Monday, Tuesday, Thursday and Friday</th>
+                <td>
+                  - Trousers (Woolen) Black<br />
+                  - Full Sleeves Shirt (Woolen) White<br />
+                  - School Blazer<br />
+                  - School Sweater Half Sleeves (Woolen). <br />
+                  - School Scarf/Cap (Woolen) <br />
+                  - Cap - Socks or Stockings <br />
+                  - School Leather Shoes <br />
+                  - School Belt <br />
+                  - School Bow
+                </td>
+              </tr>
+              <tr>
+                <th>Wednesday and Saturday</th>
+                <td>
+                  - P.T. Shoes<br />
+                  - House T-Shirt<br />
+                  - Trousers (Woolen) White
+                </td>
+              </tr>
+
+              <tr>
+                <th colspan="2" class="season-header">
+                  Summer Uniform (March to October)
+                </th>
+              </tr>
+              <tr>
+                <th>Monday, Tuesday, Thursday and Friday</th>
+                <td>
+                  - Trousers Black<br />
+                  - Half Sleeves Shirt White<br />
+                  - Cap<br />
+                  - Socks<br />
+                  - Black Leather School Shoes<br />
+                  - School Belt <br />
+                  - School Bow <br />
+                  - School Bag
+                </td>
+              </tr>
+              <tr>
+                <th>Wednesday and Saturday</th>
+                <td>
+                  - Trousers White<br />
+                  - House T-shirts<br />
+                </td>
+              </tr>
+            </table>
+
+            <p>
+              <strong>Note:</strong> <br />
+              In Rainy Season The Students Must Use Rain Coat & Umbrella. <br />
+              Handkerchief+Identy Card Daily. <br />
+              Children must come in White Uniform on Independence Day + Republic
+              Day & in Sat. Uniform on Sports Days. <br />
+              Track Suit is Compulsory for Yoga-Class. <br />
+              Taekwondo Uniform is must for taekwondo Class. <br />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Syllabus page -->
+      <div class="page uniform-section" id="syllabus" style="width: 60vw;">
+        <div class="uniform-dropdown">
+          <div class="uniform-header active" onclick="toggleSyllabus()">
+            <span>Class Syllabus</span>
+            <span class="dropdown-arrow active">▼</span>
+          </div>
+          <div class="uniform-content active" id="syllabusContent">
+            <div class="syllabus-cards">
+              <div class="class-card">
+                <div class="pdf-icon">PDF</div>
+                <div class="class-name">Nursery</div>
+                <a
+                  href="#"
+                  onclick="alert('Downloading Nursery Syllabus PDF...')"
+                  class="download-btn"
+                  >Download Syllabus</a
+                >
+              </div>
+
+              <div class="class-card">
+                <div class="pdf-icon">PDF</div>
+                <div class="class-name">Kindergarten</div>
+                <a
+                  href="#"
+                  onclick="alert('Downloading Kindergarten Syllabus PDF...')"
+                  class="download-btn"
+                  >Download Syllabus</a
+                >
+              </div>
+
+              <div class="class-card">
+                <div class="pdf-icon">PDF</div>
+                <div class="class-name">Class 1</div>
+                <a
+                  href="#"
+                  onclick="alert('Downloading Class 1 Syllabus PDF...')"
+                  class="download-btn"
+                  >Download Syllabus</a
+                >
+              </div>
+
+              <div class="class-card">
+                <div class="pdf-icon">PDF</div>
+                <div class="class-name">Class 2</div>
+                <a
+                  href="#"
+                  onclick="alert('Downloading Class 2 Syllabus PDF...')"
+                  class="download-btn"
+                  >Download Syllabus</a
+                >
+              </div>
+
+              <div class="class-card">
+                <div class="pdf-icon">PDF</div>
+                <div class="class-name">Class 3</div>
+                <a
+                  href="#"
+                  onclick="alert('Downloading Class 3 Syllabus PDF...')"
+                  class="download-btn"
+                  >Download Syllabus</a
+                >
+              </div>
+
+              <div class="class-card">
+                <div class="pdf-icon">PDF</div>
+                <div class="class-name">Class 4</div>
+                <a
+                  href="#"
+                  onclick="alert('Downloading Class 4 Syllabus PDF...')"
+                  class="download-btn"
+                  >Download Syllabus</a
+                >
+              </div>
+
+              <div class="class-card">
+                <div class="pdf-icon">PDF</div>
+                <div class="class-name">Class 5</div>
+                <a
+                  href="#"
+                  onclick="alert('Downloading Class 5 Syllabus PDF...')"
+                  class="download-btn"
+                  >Download Syllabus</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infrastructure Page -->
+      <div id="infrastructure" class="page">
+        <div class="infrastructure-grid">
+          <div class="infrastructure-card">
+            <img src="images/library.jpg" alt="Library" />
+            <div class="content">
+              <h3>Modern Library</h3>
+              <p>
+                Our extensive library houses over 20,000 books and digital
+                resources.
+              </p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img src="images/computer-lab.jpg" alt="Science Lab" />
+            <div class="content">
+              <h3>Science Laboratories</h3>
+              <p>State-of-the-art labs for Physics, Chemistry, and Biology.</p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img src="images/sports-and-recreation.jpg" alt="Sports Complex" />
+            <div class="content">
+              <h3>Sports Complex</h3>
+              <p>
+                Multiple sports facilities including indoor and outdoor courts.
+              </p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img src="images/sports-and-recreation.jpg" alt="Sports Complex" />
+            <div class="content">
+              <h3>Sports Complex</h3>
+              <p>
+                Multiple sports facilities including indoor and outdoor courts.
+              </p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img src="images/science-labs.jpg" alt="Sports Complex" />
+            <div class="content">
+              <h3>Sports Complex</h3>
+              <p>
+                Multiple sports facilities including indoor and outdoor courts.
+              </p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img src="images/interactive-classroom.jpg" alt="Sports Complex" />
+            <div class="content">
+              <h3>Sports Complex</h3>
+              <p>
+                Multiple sports facilities including indoor and outdoor courts.
+              </p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img src="images/school-garden.jpg" alt="Sports Complex" />
+            <div class="content">
+              <h3>Sports Complex</h3>
+              <p>
+                Multiple sports facilities including indoor and outdoor courts.
+              </p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img src="images/school-campus.webp" alt="Sports Complex" />
+            <div class="content">
+              <h3>Sports Complex</h3>
+              <p>
+                Multiple sports facilities including indoor and outdoor courts.
+              </p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img src="images/creative-arts-studio.jpg" alt="Sports Complex" />
+            <div class="content">
+              <h3>Creative Arts Studio</h3>
+              <p>
+                Multiple sports facilities including indoor and outdoor courts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Holiday List Page -->
+      <div id="holidays" class="page">
+        <div class="holiday-list">
+          <h1>Academic Year 2025-26 Holidays</h1>
+          <div class="holiday-item">
+            <span class="holiday-name">Summer Vacation</span>
+            <span class="holiday-date">May 15 - June 30, 2025</span>
+          </div>
+          <div class="holiday-item">
+            <span class="holiday-name">Independence Day</span>
+            <span class="holiday-date">August 15, 2025</span>
+          </div>
+          <!-- Add more holidays -->
+        </div>
+      </div>
+
+      <!-- Contact page -->
+      <div id="contact" class="page">
+        <div class="hero">
+          <h1>Contact Us</h1>
+          <p>Get in touch with us. We're here to help!</p>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon">📞</div>
+            <h3>Phone</h3>
+            <p>9451451794</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">✉️</div>
+            <h3>Email</h3>
+            <p>info@newrsj.in</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <h3>Address</h3>
+            <p>Ustapur Mahmoodabad, Chhatnag road, Jhunsi, Prayagraj</p>
+          </div>
+        </div>
+
+        <div class="map-section">
+          <h2 style="margin-bottom: 1rem; color: #2c3e50">Our Location</h2>
+          <div class="map-container">
+            <img
+              src="images/vasant-vihar/map.png"
+              alt="School Location Map"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Academic Page -->
+      <div id="academics" class="page">
+        <div class="academic-layout">
+          <aside class="sidebar">
+            <ul class="sidebar-nav">
+              <li>
+                <button onclick="showAcademicContent('faculty')" class="active">
+                  Faculty
+                </button>
+              </li>
+              <li>
+                <button onclick="showAcademicContent('assembly')">
+                  Assembly
+                </button>
+              </li>
+              <li>
+                <button onclick="showAcademicContent('administration')">
+                  Academic Administration
+                </button>
+              </li>
+              <li>
+                <button onclick="showAcademicContent('subjects')">
+                  Subjects
+                </button>
+              </li>
+              <li>
+                <button onclick="showAcademicContent('activities')">
+                  Activities
+                </button>
+              </li>
+              <li>
+                <button onclick="showAcademicContent('house')">
+                  House System
+                </button>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="content-area">
+            <!-- Faculty Section -->
+            <div id="faculty-content" class="academic-content active">
+              <div class="grid-layout">
+                <img src="images/faculty-meeting.jpg" alt="Faculty meeting" />
+                <img src="images/teaching-session.jpg" alt="Teaching session" />
+                <div class="full-width">
+                  <h2>Our Faculty</h2>
+                  <p>
+                    As per the guidelines the school maintains highly-qualified
+                    and trained staff, which not only implements the curriculum
+                    but also inculcates enthusiasm for learning among the
+                    students. Due to maintenance of approprite student teacher
+                    ratio, the interaction of teachers with the students
+                    facilitates involvment teachers with the students in
+                    academic and co-curricular activities. The faculty is at par
+                    with best available with the aim to achieve excellence.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Assembly Section -->
+            <div
+              id="assembly-content"
+              class="academic-content"
+              style="display: none"
+            >
+              <div class="grid-layout">
+                <img src="images/school-garden.jpg" alt="Morning assembly" />
+                <img src="images/library.jpg" alt="Special assembly" />
+                <div class="full-width">
+                  <h2>School Assembly</h2>
+                  <p>
+                    School begins with Morning Assembly with different Special
+                    Presentations fixed day-wise and is an essential part of the
+                    School schedule. Each class/section has its own special day
+                    to conduct/participate in the assembly. It provides a
+                    special window of exposer to every student.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Academic Administration Section -->
+            <div
+              id="administration-content"
+              class="academic-content"
+              style="display: none"
+            >
+              <p>
+                For the purposes of academic administration and with the intent
+                of improving efficiency, the school is devided in three
+                admintrative wings.
+              </p>
+              <p>
+                Each wing has seperate supervisors in form of Incharge/s. School
+                realises importance of it’s role in giving a good start to the
+                toddlers. It is here where the foundation of learning is laid
+                and strengthened.
+              </p>
+              <div class="wing-section">
+                <h3>Junior School Wing</h3>
+                <p>
+                  At the Junior School level unconventional system of education
+                  is adopted by the School where education is imparted through
+                  play-way methods and concepts are taught via clay modelling,
+                  sand play and painting. Teachers also enrich the curriculum
+                  through music, art, library and Audio-visual programs.
+                </p>
+              </div>
+              <div class="wing-section">
+                <h3>Middle School Wing</h3>
+                <p>
+                  Middle school wing ensures to provide the students all
+                  necessary inputs which makes themselves adept at any field
+                  from Languages, Mathematics, Science, Arts and Technology or
+                  Performing Arts. It takes care of the increasing range of
+                  opportunities available now a days. Spacious and airy
+                  classrooms makes learning comfortable. Though the basic
+                  principles and theories are taught in the classroom but habit
+                  to question with the intent to clarify doubts are inculcated.
+                </p>
+              </div>
+              <div class="wing-section">
+                <h3>Senior School Wing</h3>
+                <p>
+                  Senior Wing of the school strives at maintaing excellence in
+                  the field of academics to enable the students to stand at par
+                  with competitive world while remaining in conformity with the
+                  CBSE-CCE pattern of education.
+                </p>
+              </div>
+            </div>
+
+            <!-- Subjects Section -->
+            <div
+              id="subjects-content"
+              class="academic-content"
+              style="display: none"
+            >
+              <div class="subjects-section">
+                <h2>
+                  The school offers following subjects at 10+2 level of
+                  education
+                </h2>
+                <h3>Languages</h3>
+                <ul class="subjects-list">
+                  <li>English Core/Elective</li>
+                  <li>Hindi Core/Elective</li>
+                </ul>
+              </div>
+              <div class="subjects-section">
+                <h3>Elective Subjects</h3>
+                <ul class="subjects-list">
+                  <li>Physics</li>
+                  <li>Chemistry</li>
+                  <li>Biology</li>
+                  <li>Mathematics</li>
+                  <li>Computer Science</li>
+                  <li>Economics</li>
+                  <li>Business Studies</li>
+                  <li>Accountancy</li>
+                  <li>History</li>
+                  <li>Political</li>
+                  <li>Science</li>
+                  <li>Geography</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Activities Section -->
+            <div
+              id="activities-content"
+              class="academic-content"
+              style="display: none"
+            >
+              <div class="grid-layout">
+                <img src="/api/placeholder/400/250" alt="Sports activities" />
+                <img src="/api/placeholder/400/250" alt="Cultural activities" />
+                <div class="full-width">
+                  <h2>Extra-Curricular Activities</h2>
+                  <p>
+                    School knows that the world definitely stretches beyond it’s
+                    boundaries and the text books. To enhance the abilities of
+                    the students Planned expeditions and Study tours are
+                    organised. There are various clubs for the said purpose.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- House System Section -->
+            <div
+              id="house-content"
+              class="academic-content"
+              style="display: none"
+            >
+              <div class="grid-layout">
+                <img src="/api/placeholder/400/250" alt="House competition" />
+                <img src="/api/placeholder/400/250" alt="House meeting" />
+                <div class="full-width">
+                  <h2>House System</h2>
+                  <p>
+                    For holistic development of the students and to upgrade the
+                    competitive spirits, all the students are divided into four
+                    houses. Through the four houses, various competitive
+                    programmes are continously organised in school campus and
+                    students are suitable awarded.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admissions page -->
+      <div id="admissions" class="page">
+        <div class="hero">
+          <h1>ADMISSIONS</h1>
+          <p>MINIMUM AGE IS 3+ AS ON 31.03.2023</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>
+                ADMISSION SCHEDULE FOR ACADEMIC SESSION 2023 - 2024 FOR NURSERY
+              </h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul style="margin-left: 3px">
+                  <li>
+                    Sale of Forms 1st January 2023 onwards between 9.00 a.m. to
+                    12.30 p.m.
+                  </li>
+                  <li>
+                    Submission of Forms Within 5 days of purchase of FORM
+                    between 9.00 a.m. and 12.30 p.m.
+                  </li>
+                  <li>
+                    Admission Formalities Within 3 days of of Offer of Admission
+                    between 9.00 a.m. and 12.30 p.m.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>
+                ADMISSION PROCESS AND POLICY ACADEMIC SESSION 2023 - 2024
+                NURSERY
+              </h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p style="margin-bottom: 3px; font-weight: bold">
+                  MINIMUM AGE IS 3+ AS ON 31.03.2023
+                </p>
+
+                <div class="nested-accordion">
+                  <div class="accordion-item">
+                    <div
+                      class="accordion-header"
+                      onclick="toggleAccordion(this)"
+                    >
+                      <h3>PROCESS</h3>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="accordion-content-inner">
+                        <p>
+                          Registration for Admission: Collection of the
+                          Registration Form from the school office on payment of
+                          200/- Submission of the duly filled Registration Form,
+                          with necessary documents as detailed in the form,
+                          within five days from the date of purchase. On receipt
+                          of offer of Admission: Completion of Admission
+                          formalities including payment of fee within three
+                          working days.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div
+                      class="accordion-header"
+                      onclick="toggleAccordion(this)"
+                    >
+                      <h3>ADMISSION POLICY</h3>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="accordion-content-inner">
+                        <p>
+                          Admissions to class Nursery is being granted on first
+                          come first serve basis, till the availability of
+                          seats. Admissions to other classes are subject to
+                          availabilty of seats created by the transfer of
+                          regular students or Drop-outs. The avaiblity of seats
+                          shall be duly notified here & the school notice board
+                          after declaration of results for the academic session
+                          2023 - 2024. However for admission to other classes
+                          students must bring records of the previous two
+                          completed classes along with the necessary
+                          registration. After the valid registration interested
+                          students shall be called upon to take enterance test.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>DOCUMENTS REQUIRED ACADEMIC SESSION 2023 - 2024 NURSERY</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <div class="nested-accordion">
+                  <div class="accordion-item">
+                    <div
+                      class="accordion-header"
+                      onclick="toggleAccordion(this)"
+                    >
+                      <h3>AT THE TIME OF REGISTRATION</h3>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="accordion-content-inner">
+                        <ul style="margin-left: 3px">
+                          <li>Attested copy of Birth Certificate</li>
+                          <li>
+                            One photograph each of the Child and the Parent.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div
+                      class="accordion-header"
+                      onclick="toggleAccordion(this)"
+                    >
+                      <h3>AT THE TIME OF ADMISSION</h3>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="accordion-content-inner">
+                        <ul>
+                          <li>
+                            Date of birth Certificate ( Attested by Gazetted
+                            Officer/ Notary )
+                          </li>
+                          <li>
+                            Latest Residence Proof ( Self Attested/ Attested by
+                            Gazetted Officer/ Notary )
+                          </li>
+                          <li>Blood Group Report.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div
+                      class="accordion-header"
+                      onclick="toggleAccordion(this)"
+                    >
+                      <h3>OTHER ADMISSION ALL THE ABOVE ALONG WITH</h3>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="accordion-content-inner">
+                        <ul style="margin-left: 3px">
+                          <li>
+                            Complete academic transcripts of the previous two
+                            classes attended by the student And Transfer
+                            Certificate (Original).
+                          </li>
+                          <li>
+                            In case of interstate students, the TC should be
+                            counter signed by the education officer.
+                          </li>
+                          <li>Photocopy of Mark sheet ( last two years ).</li>
+                          <li>
+                            Photographs of mother, father, student (2 each).
+                          </li>
+                          <li>
+                            Two additional photographs of the person who will be
+                            picking up the child (other than the parents) from
+                            the school.
+                          </li>
+                          <li>
+                            Caste Certificate – In case students belongs to OBC
+                            /SC/ST( Attested by GazettedOfficer/ Notary )
+                          </li>
+                          <li>
+                            Note :- All the photocopies should be self attested
+                            by one of the parent.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>SCHOOL FEE</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul style="margin-left: 3px">
+                  <li>Admission Fee (Once at the time of admission)</li>
+                  <li>Fee payable per Month(Provisional)</li>
+                  <li>Aforesaid fee is exclusive of other charges</li>
+                  <li>PROVISIONAL TRANSPORT CHARGES (Payable per month)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>PAYMENT OF FEES</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul style="margin-left: 3px">
+                  <li>
+                    School fees shall be paid by the 5th day of every calendar
+                    month. If the day falls on a holiday then the fees will be
+                    realized on the next working day.
+                  </li>
+                  <li>
+                    If school fee is not paid by 10th day of each English
+                    calendar month, a fine of 10/- shall be charged for 6th day
+                    to 20th day of English calendar month, a fine of 20/- shall
+                    be charged for 21st day until last day of the month. If
+                    school fee is not paid even by the last day English calendar
+                    month, a fine of 30/-shallbe charged for every month.
+                  </li>
+                  <li>
+                    If the school fee is not paid for two consecutive months,
+                    then the name of the student would be struck off from the
+                    rolls without issuing any notice or giving any further
+                    information. Re-admission of such student can only be made
+                    when parents give an undertaking to the effect that such
+                    conduct would not be repeated. The additional re-admission
+                    charge of 200/-would be imposed at time of re-admission.
+                  </li>
+                  <li>
+                    In the month of February school fee for the months of
+                    February &March shall be simultaneously deposited by the
+                    10th day of February.
+                  </li>
+                  <li>
+                    “Other & Annual charges” must be paid with fees payble in
+                    April.
+                  </li>
+                  <li>
+                    Parent/guardians are requested to keep fee receipt for their
+                    record and for the reference if any, and produce the same
+                    when required by the school.
+                  </li>
+                  <li>
+                    Fees can be deposited between 8.a.m. to 12.00p.m. On all
+                    working days at fee counter will remain open during summer
+                    Vacation between 8 to 10a.m.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements Page -->
+      <div id="class10" class="page">
+        <div class="quote-section">
+          <p class="quote">
+            "Success is not final, failure is not fatal: it is the courage to
+            continue that counts."
+          </p>
+          <p class="quote-author">- Winston Churchill</p>
+        </div>
+        <div class="gallery">
+          <!-- Generate 20 image placeholders for Class 10 -->
+          <div class="gallery-item">
+            <img src="images/placeholder.webp" alt="Class 10 Student 1" />
+            <div class="gallery-caption">Aisha Patel - 98.8%</div>
+          </div>
+          <!-- Repeat similar gallery-item divs 19 more times with different names and scores -->
+        </div>
+      </div>
+
+      <!-- Class 12 Achievements Page -->
+      <div id="class12" class="page">
+        <div class="quote-section">
+          <p class="quote">
+            "Education is not preparation for life; education is life itself."
+          </p>
+          <p class="quote-author">- John Dewey</p>
+        </div>
+        <div class="gallery">
+          <!-- Generate 20 image placeholders for Class 12 -->
+          <div class="gallery-item">
+            <img src="images/placeholder.webp" alt="Class 12 Student 1" />
+            <div class="gallery-caption">Rahul Shah - 97.6%</div>
+          </div>
+          <!-- Repeat similar gallery-item divs 19 more times with different names and scores -->
+        </div>
+      </div>
+
+      <!-- Transfer Certificate Page -->
+      <div id="transfer" class="page">
+        <div class="hero">
+          <h1>Transfer Certificates</h1>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>2024-25</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="subjects-list">
+                  <li style="text-align: center">
+                    <p style="font-weight: bold">John Doe</p>
+                    <p style="margin-top: 2px">Class: XII - B</p>
+                    <p style="margin-top: 2px">Date: 12/01/2023</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>2023-24</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="subjects-list">
+                  <li style="text-align: center">
+                    <p style="font-weight: bold">John Doe</p>
+                    <p style="margin-top: 2px">Class: XII - B</p>
+                    <p style="margin-top: 2px">Date: 12/01/2023</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>2022-23</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="subjects-list">
+                  <li style="text-align: center">
+                    <p style="font-weight: bold">John Doe</p>
+                    <p style="margin-top: 2px">Class: XII - B</p>
+                    <p style="margin-top: 2px">Date: 12/01/2023</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facilites Page -->
+      <div id="facilities" class="page">
+        <div class="hero">
+          <h1>Our Facilities</h1>
+          <p>Discover the facilities at the New R.S.J. Public School.</p>
+        </div>
+
+        <div class="facilities-grid">
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/Computer\ Lab.jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>COMPUTER LAB</h2>
+              <p>
+                The School has a well-equipped computer lab. The School has
+                competent computer teachers to train the students in the latest
+                advancements in technology and computing. Beginning from the
+                Junior School, we focus on keyboarding, word processing and
+                internet skills. The computer lab is equipped with the
+                facilities like, Multimedia systems, LCD monitors, Supervised
+                Internet connection, online UPS for system backup, educational
+                softwares etc.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/smart\ classroom.jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>SMART CLASS</h2>
+              <p>
+                The School management have been successful in bringing
+                technology in classrooms with the introduction of interactive
+                Whiteboards and Smart Boards. These allow students to interact
+                with the lesson content through the softwares provided by
+                EDUCOMP. This helps in widening their analytical faculties.
+                Classrooms are spacious and have adequate cooling and lighting
+                through fans and tubelights. The number of students in each
+                class is restricted, so that the teachers can give individual
+                attention to each student.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/library.jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>LIBRARY</h2>
+              <p>
+                The School library houses more than 10000 books apart from the
+                reference section for the students as well as teachers. No doubt
+                it is a learning center for all. To keep the students updated
+                with the current affairs, the school provides at least four
+                newspapers daily apart from several other periodicals on variety
+                of subjects. The library also provides e-books and e-learning
+                facility. It also houses several other books to help the senior
+                students for their competetive exams.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/science\ club\ act..jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>SCIENCE LAB</h2>
+              <p>
+                The School offers well equipped modern labs for Physics,
+                Chemistry, Biology, Mathematics & Social-Studies as per the
+                settled standards. It helps students in inculcating scientific
+                temper through controlled experiments as per the guidelines. The
+                Labs are also linked through the various softwares wherein
+                student can get first hand experience of experiments.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/GK\ club\ activity.jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>LANGUAGE LAB</h2>
+              <p>
+                The School operates language lab through the make shift area of
+                the library with the sole purpose of improving phonetic skills
+                of the students. It houses audio-video section through audio and
+                video technique with the help of documentaries and films
+                pertaining to various languages.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/school\ office.jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>MEDICAL ROOM</h2>
+              <p>
+                The School has a reasonable equipped Medical Room to meet the
+                emergency situation. A Registered Medical Practitioner visits
+                the School daily during school hours. All emergencies are
+                attended with utmost care. If required, the student is also sent
+                to nearby nursing home/hospital. Regular medical checkups are
+                conducted.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/GK\ club\ activity.jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>TRANSPORT</h2>
+              <p>
+                The School has its own fleet of buses. Each bus has a driver and
+                a conductor for complete safety and security of the children.
+                Each bus is provided with mobile phone facility. For the safety
+                of students every bus is equipped with fire-extinguishers. The
+                routes and timing of the entire fleet of buses are monitored
+                with the help of staff appointed for the same. Bus facility is
+                available on limited routes.
+              </p>
+            </div>
+          </div>
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/dance.jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>ARTS</h2>
+              <p>
+                School provides for it’s students an appropriate venue for
+                training, learning & participation in Dance (Indian & Western),
+                Music (Indian and Western), Theatre, Performing Arts etc. The
+                results of participation in such activities are improved
+                self-confidence, better public speaking skills etc. Students
+                also show other gains as well, such as the “ability to work with
+                an ensemble in cooperative ventures” and the “ability to work
+                through consensus and differences or obstacles to achieve a
+                goal”.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/vasant-vihar/scout\ n\ guide.jpg')"
+            ></div>
+            <div class="facility-content">
+              <h2>BOOK/STATIONARY</h2>
+              <p>
+                The book run inside the school primises for limited period to
+                faciliatate the students for their purchase of curriculum books
+                & stationary designed to support the child’s development right
+                from Nursery to Class XII student.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery page -->
+      <div id="gallery" class="page">
+        <div class="hero">
+          <h1>Our Gallery</h1>
+          <p>
+            Explore our memorable moments and achievements through photos and
+            videos.
+          </p>
+        </div>
+
+        <div class="gallery-container">
+          <div class="gallery-nav">
+            <button onclick="showGallerySection('photo')" class="active">
+              Photo Gallery
+            </button>
+            <button onclick="showGallerySection('video')">Video Gallery</button>
+          </div>
+
+          <div id="photo-gallery" class="gallery-section active">
+            <div class="year-section">
+              <h2>2024-25</h2>
+              <div class="photo-grid">
+                <div class="photo-item">
+                  <img src="images/vasant-vihar/annual function.jpg" alt="Annual Day 2024" />
+                </div>
+                <div class="photo-item">
+                  <img src="images/vasant-vihar/children day.jpg" alt="Sports Day 2024" />
+                </div>
+                <div class="photo-item">
+                  <img
+                    src="images/vasant-vihar/christmas.jpg"
+                    alt="Science Exhibition 2024"
+                  />
+                </div>
+                <div class="photo-item">
+                  <img
+                    src="/images/vasant-vihar/dance.jpg"
+                    alt="Cultural Festival 2024"
+                  />
+                </div>
+                <div class="photo-item">
+                    <img
+                      src="images/vasant-vihar/drawing club activity.jpg"
+                      alt="Cultural Festival 2024"
+                    />
+                  </div>
+                  <div class="photo-item">
+                    <img
+                      src="/images/vasant-vihar/earth day.jpg"
+                      alt="Cultural Festival 2024"
+                    />
+                  </div>
+              </div>
+            </div>
+
+            <div class="year-section">
+              <h2>2023-24</h2>
+              <div class="photo-grid">
+                <div class="photo-item">
+                  <img
+                    src="images/vasant-vihar/GK club activity.jpg"
+                    alt="Graduation Day 2023"
+                  />
+                </div>
+                <div class="photo-item">
+                  <img
+                    src="images/vasant-vihar/janmashtami.jpg"
+                    alt="Annual Sports Meet 2023"
+                  />
+                </div>
+                <div class="photo-item">
+                  <img
+                    src="images/vasant-vihar/hindi club activity.jpg"
+                    alt="Art Exhibition 2023"
+                  />
+                </div>
+                <div class="photo-item">
+                    <img
+                      src="images/vasant-vihar/labour day.jpg"
+                      alt="Graduation Day 2023"
+                    />
+                  </div>
+                  <div class="photo-item">
+                    <img
+                      src="images/vasant-vihar/maths club activity.jpg"
+                      alt="Annual Sports Meet 2023"
+                    />
+                  </div>
+                  <div class="photo-item">
+                    <img
+                      src="images/vasant-vihar/mother day.jpg"
+                      alt="Art Exhibition 2023"
+                    />
+                  </div>
+              </div>
+            </div>
+
+            <div class="year-section">
+              <h2>2022-23</h2>
+              <div class="photo-grid">
+                <div class="photo-item">
+                  <img src="images/vasant-vihar/medal distribution.jpg" alt="School Day 2022" />
+                </div>
+                <div class="photo-item">
+                  <img
+                    src="images/vasant-vihar/pt display.jpg"
+                    alt="Cultural Events 2022"
+                  />
+                </div>
+                <div class="photo-item">
+                  <img src="/images/vasant-vihar/scout n guide.jpg" alt="Sports Day 2022" />
+                </div>
+                <div class="photo-item">
+                    <img src="images/vasant-vihar/PTM.jpg" alt="School Day 2022" />
+                  </div>
+                  <div class="photo-item">
+                    <img
+                      src="images/vasant-vihar/social club.jpg"
+                      alt="Cultural Events 2022"
+                    />
+                  </div>
+                  <div class="photo-item">
+                    <img src="/images/vasant-vihar/sports day.jpg" alt="Sports Day 2022" />
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="video-gallery" class="gallery-section">
+            <div class="video-grid">
+              <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zxeFBDSdzJo?si=BDN1sldvVywLEIP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lzCs5A_FZdI?si=9LLvHQzUXhFIzKqZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are committed to create a happy, purposeful and secure
+            envoirement which provides the opportunity for all to develop and
+            grow, to build confidence and self-belief, and to be enriched and
+            stimulated so that we can all contribute significantly and
+            positively to the community.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Programs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <address>
+            Prayagraj<br />
+            Office : +91 94514517947<br />
+            Email : info@newrsj.in
+          </address>
+        </div>
+
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <p>Follow us on social media for updates and news.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 New R.S.J. Public School - All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
