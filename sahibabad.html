@@ -12,7 +12,7 @@
     <header>
       <div class="header-content">
         <div class="logo">
-          <img src="images/vasant-vihar/logoFull.png" alt="" />
+          <img src="images/saibabad/logoFull.png" alt="" />
         </div>
         <button class="mobile-menu-btn">☰</button>
         <nav>
@@ -24,13 +24,22 @@
               <a href="#" onclick="showPage('annual-planner')"
                 >Annual Planner</a
               >
-              <a href="#" onclick="showPage('school-song')">School Song</a>
-              <a href="#" onclick="showPage('saturday-song')">Saturday Song</a>
-              <a href="#" onclick="showPage('uniform')">Uniform</a>
-              <a href="#" onclick="showPage('syllabus')">Syllabus</a>
+              <a href="#" onclick="showPage('infrastructure')"
+                >Infrastructure</a
+              >
               <a href="#" onclick="showPage('holidays')">Holiday List</a>
             </div>
           </div>
+          <a href="#" onclick="showPage('academics')">Academics</a>
+          <a href="#" onclick="showPage('admissions')">Admission</a>
+          <div class="nav-item">
+            <a href="#">Achievements</a>
+            <div class="dropdown-content">
+              <a href="#" onclick="showPage('class10')">Class 10 Toppers</a>
+              <a href="#" onclick="showPage('class12')">Class 12 Toppers</a>
+            </div>
+          </div>
+          <a href="#" onclick="showPage('transfer')">Transfer Certificate</a>
           <a href="#" onclick="showPage('facilities')">Facilities</a>
           <a href="#" onclick="showPage('gallery')">Gallery</a>
           <a href="#" onclick="showPage('contact')">Contact Us</a>
@@ -53,27 +62,30 @@
           </p>
         </div>
         <div class="branch-selector">
-          <button class="branch-btn" onclick="switchBranch(1)">
-            <a href="/index.html">Chhatnag</a>
+          <a href="index.html">
+            <button class="branch-btn" onclick="switchBranch(1)">
+              <a href="/index.html">Chhatnag</a>
+            </button>
+          </a>
+          <a href="vasant-vihar.html">
+            <button class="branch-btn" onclick="switchBranch(2)">
+              <a href="vasant-vihar.html">Vasant Vihar</a>
+            </button>
+          </a>
+          <a href="sahibabad.html">
+            <button class="branch-btn active" onclick="switchBranch(3)">
+            <a href="sahibabad.html"> Saibabad </a>
           </button>
-          <button class="branch-btn active" onclick="switchBranch(2)">
-            <a href="/index2.html">Vasant Vihar</a>
-          </button>
-          <button class="branch-btn" onclick="switchBranch(3)">
-            <a href="/index3.html"> Sahibabad </a>
-          </button>
+          </a>
         </div>
 
-        <div id="branch1" class="branch-content">
+        <div id="branch1" class="branch-content active">
           <div class="hero">
-            <h2>Chhatnag</h2>
-            <!-- <p>
-              Our flagship campus in the heart of the city, offering
-              state-of-the-art facilities and a diverse learning environment.
-            </p> -->
+            <h2>Saibabad Branch</h2>
+            <p>JAMSHEDPUR LALAPUR, HANDIA, PRAYAGRAJ, 221508</p>
           </div>
           <img
-            src="/"
+            src="/images/saibabad/sahibabd-campus.jpg"
             alt="Branch 1 Campus"
             style="
               width: 100%;
@@ -85,13 +97,16 @@
           />
         </div>
 
-        <div id="branch2" class="branch-content active">
+        <div id="branch2" class="branch-content">
           <div class="hero">
-            <h2>Vasant Vihar Campus</h2>
-            <!-- <p>A modern campus focused on technology and innovation, preparing students for the digital future.</p> -->
+            <h2>Tech Campus - Innovation District</h2>
+            <p>
+              A modern campus focused on technology and innovation, preparing
+              students for the digital future.
+            </p>
           </div>
           <img
-            src="/images/vasant-vihar/school building.jpg"
+            src="/api/placeholder/800/400"
             alt="Branch 2 Campus"
             style="
               width: 100%;
@@ -105,14 +120,14 @@
 
         <div id="branch3" class="branch-content">
           <div class="hero">
-            <h2>Sahibabad</h2>
+            <h2>Saibabad Branch</h2>
             <p>
               A creative hub dedicated to nurturing artistic talent and cultural
               expression.
             </p>
           </div>
           <img
-            src="/api/placeholder/800/400"
+            src="/images/saibabad/sahibabd-campus.jpg"
             alt="Branch 3 Campus"
             style="
               width: 100%;
@@ -139,54 +154,33 @@
             <div class="carousel">
               <div class="carousel-slide">
                 <img
-                  src="images/vasant-vihar/school building.jpg"
+                  src="images/saibabad/Annual SportsDay (1).jpg"
                   alt="School campus"
                 />
-                <div class="carousel-caption">Our Beautiful Campus</div>
+                <div class="carousel-caption">Annual Sports Day</div>
               </div>
               <div class="carousel-slide">
-                <img src="images/vasant-vihar/library.jpg" alt="Library" />
+                <img src="images/saibabad/Library.jpeg" alt="Library" />
                 <div class="carousel-caption">Modern Library Facilities</div>
               </div>
               <div class="carousel-slide">
-                <img
-                  src="images/vasant-vihar/science club act..jpg"
-                  alt="Science lab"
-                />
-                <div class="carousel-caption">Science Labs</div>
+                <img src="images/saibabad/Taekwondo.jpg" alt="Science lab" />
+                <div class="carousel-caption">Taekwondo Classes</div>
               </div>
               <div class="carousel-slide">
                 <img
-                  src="images/vasant-vihar/sports day.jpg"
+                  src="images/saibabad/Bio Lab.jpg"
                   alt="Sports facilities"
                 />
-                <div class="carousel-caption">Sports and Recreation</div>
+                <div class="carousel-caption">Biology Lab</div>
               </div>
               <div class="carousel-slide">
-                <img
-                  src="images/vasant-vihar/smart classroom.jpg"
-                  alt="Classroom"
-                />
+                <img src="images/saibabad/phy1.jpeg" alt="Classroom" />
                 <div class="carousel-caption">Interactive Classrooms</div>
               </div>
               <div class="carousel-slide">
-                <img src="images/vasant-vihar/dance.jpg" alt="Art studio" />
-                <div class="carousel-caption">Creative Arts Studio</div>
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="images/vasant-vihar/Computer Lab.jpg"
-                  alt="Computer lab"
-                />
-                <div class="carousel-caption">Computer Laboratory</div>
-              </div>
-              <div class="carousel-slide">
-                <img src="images/vasant-vihar/social club.jpg" alt="Garden" />
-                <div class="carousel-caption">Social Club</div>
-              </div>
-              <div class="carousel-slide">
-                <img src="images/vasant-vihar/pt display.jpg" alt="Garden" />
-                <div class="carousel-caption">School Ground</div>
+                <img src="images/saibabad/RSJ Family.jpg" alt="Auditorium" />
+                <div class="carousel-caption">Our RSJ Family</div>
               </div>
             </div>
           </div>
@@ -194,51 +188,46 @@
           <div class="bento-grid">
             <div class="bento-item principal-message">
               <img
-                src="images/vasant-vihar/school building.jpg"
+                src="images/saibabad/Principal Sir.jpg"
                 alt="Principal"
                 class="principal-img"
               />
               <div>
-                <h2 class="section-title">
-                  WELCOME TO NEW R.S.J. PUBLIC SCHOOL
-                </h2>
+                <h2 class="section-title">Principal's Message</h2>
                 <p>
-                  New R.S.J. (Recreational Study Junction) Public School at
-                  Vasant Viahr Jhusi, Allahabad had a very humble begging in the
-                  year 2001. The School Mainly caters to the requirments of
-                  student who requier pre-primery education. The School run into
-                  two shifts. The first shift caters to pre pimeary requirment
-                  and second shift caters to class I to V requirment.
+                  Education is not just a process of giving knowledge for a
+                  future job but a lifelong process which creates an
+                  understanding of moral and ethical values to guide one’s life
+                  in a right path. As a parent, you want the best for your child
+                  and we are proud to be working with you to ensure that they
+                  are given the right knowledge to face the future challenges.
                 </p>
               </div>
             </div>
 
-            <div class="bento-item about-school" style="text-align: center">
-              <h2 class="section-title">Shift One</h2>
-              <p style="text-align: center">
-                NUR - UKG
-                <br />
-                8:00 AM - 11:15 AM
-              </p>
-              <h2
-                class="section-title"
-                style="margin-top: 5px; margin-bottom: 5px"
-              >
-                Shift Two
-              </h2>
+            <div class="bento-item about-school">
+              <h2 class="section-title">Manager's Message</h2>
               <p>
-                I - V
-                <br />
-                11:15 AM - 4:15 PM
+                New RSJ Public School is open to all sections of society without
+                any discrimination. All those who are either intrested in
+                imparting or receiving education are welcome. However school
+                promotes all those who have thirst for education and are not
+                mearly intrested in qualification.
               </p>
             </div>
 
             <div class="bento-item school-motto">
               <div>
-                <h2 class="section-title">LANGUAGES LABS</h2>
+                <h2 class="section-title">Director's Message</h2>
                 <p>
-                  The School operates language lab through the make shift area
-                  of the library with.
+                  New R S J Public School is a secular place of learning. The
+                  school is situated in the rural background away from the
+                  municipal limits of the city of Prayagraj. School strictly
+                  follows the curriculum of CBSE without any deviation and gives
+                  opportunity to the rural sections of the society residing
+                  within the vicinity of the school. School thus provides ample
+                  opportunity for cultural growth to the rural heart of
+                  Prayagraj.
                 </p>
               </div>
             </div>
@@ -248,20 +237,25 @@
               <div class="news-container">
                 <div class="news-ticker">
                   <div class="news-item">
-                    <h3>Annual Sports Day</h3>
-                    <p>Scheduled for March 15th, 2025</p>
+                    <h3>School Reopening</h3>
+                    <p>Reopen school after Summer Vacation-3rd July 2023</p>
                   </div>
                   <div class="news-item">
-                    <h3>Parent-Teacher Meeting</h3>
-                    <p>February 28th, 2025</p>
+                    <h3>Independence Day Celebration</h3>
+                    <p>
+                      Independence Day (09:00 a.m. to 11:30 a.m)-15th August
+                      2023
+                    </p>
                   </div>
                   <div class="news-item">
-                    <h3>Science Fair</h3>
-                    <p>Registration open until March 1st</p>
+                    <h3>Singing Competition</h3>
+                    <p>
+                      Singing Comp. Cl 6-12+Hindi Speech N - 5-12th August 2023
+                    </p>
                   </div>
                   <div class="news-item">
-                    <h3>Holiday Notice</h3>
-                    <p>Spring break: March 20-27</p>
+                    <h3>Parent Teacher Meeting</h3>
+                    <p>Parents, Teacher Meeting-31st July 2023</p>
                   </div>
                   <div class="news-item">
                     <h3>Academic Excellence Awards</h3>
@@ -275,38 +269,71 @@
               <div class="toppers-carousel">
                 <div class="topper-slide active">
                   <div class="topper-content">
-                    <div style="text-align: center">
-                      <h3 style="margin-bottom: 10px">SPORTS</h3>
-                      <p>
-                        The sports and games are integral part of education.
-                        Some of the outdoor sporting activities are cricket,
-                        football and basketball.
-                      </p>
+                    <img
+                      src="images/saibabad/topper-1.jpeg"
+                      alt="Top Student 1"
+                      class="topper-img"
+                    />
+                    <div>
+                      <h3>Amritansh Dwivedi</h3>
+                      <p>Class X</p>
+                      <p>88%</p>
                     </div>
                   </div>
                 </div>
                 <div class="topper-slide">
                   <div class="topper-content">
-                    <div style="text-align: center">
-                      <h3 style="margin-bottom: 10px">ARTS</h3>
-                      <p>
-                        School provides for it's students an appropriate venue
-                        for training, learning and applying different forms of
-                        arts like dance and music.
-                      </p>
+                    <img
+                      src="images/saibabad/topper-2.jpeg"
+                      alt="Top Student 2"
+                      class="topper-img"
+                    />
+                    <div>
+                      <h3>Aeram Firdosh</h3>
+                      <p>Class X</p>
+                      <p>88.8%</p>
                     </div>
                   </div>
                 </div>
                 <div class="topper-slide">
                   <div class="topper-content">
-                    <div style="text-align: center">
-                      <h3 style="margin-bottom: 10px">MUSIC LESSON</h3>
-                      <p>
-                        The School management have been successful in bringing
-                        technology in classrooms and arranging music lessons for
-                        children which not only helps them focus better but also
-                        provides a recreational break.
-                      </p>
+                    <img
+                      src="images/saibabad/topper-3.jpeg"
+                      alt="Top Student 3"
+                      class="topper-img"
+                    />
+                    <div>
+                      <h3>Saharsh Kumar</h3>
+                      <p>Class X</p>
+                      <p>96.2%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topper-slide">
+                  <div class="topper-content">
+                    <img
+                      src="images/saibabad/topper-4.jpeg"
+                      alt="Top Student 3"
+                      class="topper-img"
+                    />
+                    <div>
+                      <h3>Divyanshu Saroj</h3>
+                      <p>Class X</p>
+                      <p>94%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topper-slide">
+                  <div class="topper-content">
+                    <img
+                      src="images/saibabad/topper-5.jpeg"
+                      alt="Top Student 3"
+                      class="topper-img"
+                    />
+                    <div>
+                      <h3>Sahil Yadav</h3>
+                      <p>Class X</p>
+                      <p>88.8%</p>
                     </div>
                   </div>
                 </div>
@@ -371,293 +398,367 @@
       <div id="about-us" class="page">
         <div class="about-page">
           <img
-            src="images/vasant-vihar/school building.jpg"
+            src="images/saibabad/sahibabd-campus.jpg"
             alt="School Building"
             class="about-image"
           />
           <h1>About New R.S.J. Public School</h1>
           <p>
-            New R.S.J. (Recreational Study Junction) Public School at Vasant
-            Viahr Jhusi, Allahabad had a very humble begining in the year 2001.
-            The School Mainly caters to the requirments of student who requier
-            pre-primery education. The School run into two shifts. The first
-            shift caters to pre pimeary requirment and second shift caters to
-            class I to V requirment. Since it’s inception, the school has
-            emboldened the idea of it’s being a secular place of learning and
-            has always remined open for all the sections of sociaty. The
-            school’s moto ‘Forward Ever’ is the basic ideal under which the
-            ethics along with the parents and future requirments of all those
-            associated with the school, so that the march of Moving forward
-            continues to make success stories. The School is founded on the
-            basis of co-education system. School provides its students an
-            environment which facilitates then to reach beyond their social and
-            economic status.
+            New R.S.J Public School had a very humble beginning in the year
+            2016. The school now has well splendid campus at the Recreational
+            Study Junction, Jamshedpur Lalapur, Handia, Prayagraj. Since its
+            inception, the school has emboldened the ideal of it’s being a
+            secular place of learning and has always remained open for all the
+            sections of society. The school’s motto “Forward Ever” is the basic
+            ideal under which the school is governed keeping an eye on the
+            ethics along with the present and future requirements of all those
+            associated with the school, so that the march of moving forward
+            continues to make scuccess stories.
           </p>
           <p>
-            The credit for the success, which the school has achieved in small
-            periods of time, gose to the staff of the school as well as the
-            students and their parents who have contributed immensely in
-            deriving new techniques of imparting education. It is the auspicious
-            nexus which has also contributed hugely to the growth of students in
-            extra curricular activities. The school has always been ready for
-            introduction of newer and better schemes for comprehensive and
-            balance development of its students. The school takes no grant in
-            aid from the government and depends entirely upon the money obtained
-            as fee from its pupil.
+            The school is founded on the basis of co-educational system of
+            education following C.B.S.E. pattern of education and school
+            provides it’s students an environment which facilitates them to
+            reach beyond their social and economic status. The credit for the
+            sucess, which the school has achieved in a small period of time,
+            goes to the staff, student and parents of the school who have
+            contributed immensely in deriving new techniques of imparting
+            education. It is this auspicious nexus which has also contributed
+            incredibly to the growth of students in all fields.
+          </p>
+          <p>
+            The school has always been ready for introduction of newer and
+            better schemes for comprehensive and balanced development of it’s
+            students. The school takes no grant in aid from the government and
+            depends entirely upon the money obtained as fee from it’s pupil.
           </p>
           <!-- Add more content as needed -->
         </div>
       </div>
-
       <!-- Annual planner page -->
       <div id="annual-planner" class="page">
-        <div class="calendar-container">
-          <h1>Academic Calendar 2025-26</h1>
-          <div class="calendar">
-            <div class="calendar-nav">
-              <button onclick="previousMonth()">&lt;</button>
-              <h2 id="currentMonth">April 2025</h2>
-              <button onclick="nextMonth()">&gt;</button>
+        <div class="planner-section">
+          <div class="planner-header">
+            <h2>Academic Calendar 2025-26</h2>
+          </div>
+
+          <div class="month-cards">
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('april')">
+                <h3>April</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="april">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">3</span>
+                    <span class="event-description activity"
+                      >New academic session begins</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">8</span>
+                    <span class="event-description"
+                      >Regular time table distribution</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">10</span>
+                    <span class="event-description activity"
+                      >Regular class begins</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">29</span>
+                    <span class="event-description activity"
+                      >Parent Teacher Meeting</span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="calendar-grid"></div>
-            <div class="calendar-events">
-              <h3>Events This Month</h3>
-              <div id="monthEvents"></div>
+
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('may')">
+                <h3>May</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="may">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">6, 13, 20, 27</span>
+                    <span class="event-description activity"
+                      >Weekly Test Schedule</span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- School song page -->
-      <div id="school-song" class="page">
-        <div class="about-page">
-          <h1 style="text-align: center">School Song</h1>
-          <p style="text-align: center; margin-top: 10px; line-height: 20px">
-            We Belong From New RJPS <br />
-            It’s Fine Grand and Marvelous <br />
-            In a Sound . Healthy Atmosphere <br />
-            We Learn. To Forward Ever, Forward Ever, Forward Ever, Forward Ever
-            <br />
-            Rich and Poor Come Together <br />
-            Lending all a Helping Hand <br />
-            People of all Regions <br />
-            As One Family We Stand <br />
-            We Belong From New RJPS <br />
-            It’s Fine Grand and Marvelou <br />
-            In a Sound . Healthy Atmosphere <br />
-            We Learn. To Forward Ever, Forward Ever, Forward Ever, Forward Ever
-            <br />
-            Our School is a Place of Learning <br />
-            But it Give as we Put in <br />
-            It Moulds and Builds our Character <br />
-            To Face the World and Win <br />
-            We Belong From New RJPS <br />
-            It’s Fine Grand and Marvelous. <br />
-          </p>
-
-          <!-- Add more content as needed -->
-        </div>
-      </div>
-
-      <!-- Saturday Song Page -->
-      <div id="saturday-song" class="page">
-        <div class="about-page">
-          <h1 style="text-align: center">Saturday Song</h1>
-          <p style="text-align: center; margin-top: 10px; line-height: 25px">
-            We shall overcome, <br />
-            We shall overcome, <br />
-            We shall overcome, some day. <br />
-            Oh, deep in my heart, <br />
-            I do believe <br />
-            We shall overcome, some day. <br />
-            We'll walk hand in hand, <br />
-            We'll walk hand in hand, <br />
-            We'll walk hand in <br />
-            hand, some day. <br />
-            Oh, deep in my heart, <br />
-            We shall live in peace, <br />
-            We shall live in peace, <br />
-            We shall live in peace, some day. <br />
-            Oh, deep in my heart, <br />
-            We shall all be free, <br />
-            We shall all be free, <br />
-            We shall all be free, some day. <br />
-            Oh, deep in my heart, <br />
-            We are not afraid, <br />
-            We are not afraid, <br />
-            We are not afraid, TODAY <br />
-            Oh, deep in my heart, <br />
-            We shall overcome, <br />
-            We shall overcome, <br />
-            We shall overcome, some day. <br />
-            Oh, deep in my heart, <br />
-            I do believe We shall overcome, some day <br />
-          </p>
-
-          <!-- Add more content as needed -->
-        </div>
-      </div>
-
-      <!-- School uniform page -->
-      <div class="uniform-section page" id="uniform">
-        <div class="uniform-dropdown">
-          <div class="uniform-header" onclick="toggleUniform()">
-            <span>School Uniform Guidelines</span>
-          </div>
-          <div class="uniform-content active" id="uniformContent">
-            <table class="uniform-table">
-              <tr>
-                <th colspan="2" class="season-header">
-                  Winter Uniform (November to February)
-                </th>
-              </tr>
-              <tr>
-                <th>Monday, Tuesday, Thursday and Friday</th>
-                <td>
-                  - Trousers (Woolen) Black<br />
-                  - Full Sleeves Shirt (Woolen) White<br />
-                  - School Blazer<br />
-                  - School Sweater Half Sleeves (Woolen). <br />
-                  - School Scarf/Cap (Woolen) <br />
-                  - Cap - Socks or Stockings <br />
-                  - School Leather Shoes <br />
-                  - School Belt <br />
-                  - School Bow
-                </td>
-              </tr>
-              <tr>
-                <th>Wednesday and Saturday</th>
-                <td>
-                  - P.T. Shoes<br />
-                  - House T-Shirt<br />
-                  - Trousers (Woolen) White
-                </td>
-              </tr>
-
-              <tr>
-                <th colspan="2" class="season-header">
-                  Summer Uniform (March to October)
-                </th>
-              </tr>
-              <tr>
-                <th>Monday, Tuesday, Thursday and Friday</th>
-                <td>
-                  - Trousers Black<br />
-                  - Half Sleeves Shirt White<br />
-                  - Cap<br />
-                  - Socks<br />
-                  - Black Leather School Shoes<br />
-                  - School Belt <br />
-                  - School Bow <br />
-                  - School Bag
-                </td>
-              </tr>
-              <tr>
-                <th>Wednesday and Saturday</th>
-                <td>
-                  - Trousers White<br />
-                  - House T-shirts<br />
-                </td>
-              </tr>
-            </table>
-
-            <p>
-              <strong>Note:</strong> <br />
-              In Rainy Season The Students Must Use Rain Coat & Umbrella. <br />
-              Handkerchief+Identy Card Daily. <br />
-              Children must come in White Uniform on Independence Day + Republic
-              Day & in Sat. Uniform on Sports Days. <br />
-              Track Suit is Compulsory for Yoga-Class. <br />
-              Taekwondo Uniform is must for taekwondo Class. <br />
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Syllabus page -->
-      <div class="page uniform-section" id="syllabus" style="width: 60vw;">
-        <div class="uniform-dropdown">
-          <div class="uniform-header active" onclick="toggleSyllabus()">
-            <span>Class Syllabus</span>
-            <span class="dropdown-arrow active">▼</span>
-          </div>
-          <div class="uniform-content active" id="syllabusContent">
-            <div class="syllabus-cards">
-              <div class="class-card">
-                <div class="pdf-icon">PDF</div>
-                <div class="class-name">Nursery</div>
-                <a
-                  href="#"
-                  onclick="alert('Downloading Nursery Syllabus PDF...')"
-                  class="download-btn"
-                  >Download Syllabus</a
-                >
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('june')">
+                <h3>June 2025</h3>
+                <span class="dropdown-arrow">▼</span>
               </div>
-
-              <div class="class-card">
-                <div class="pdf-icon">PDF</div>
-                <div class="class-name">Kindergarten</div>
-                <a
-                  href="#"
-                  onclick="alert('Downloading Kindergarten Syllabus PDF...')"
-                  class="download-btn"
-                  >Download Syllabus</a
-                >
+              <div class="month-content" id="june">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">21</span>
+                    <span class="event-description holiday"
+                      >Reopen after summer vacation</span
+                    >
+                  </li>
+                </ul>
               </div>
+            </div>
 
-              <div class="class-card">
-                <div class="pdf-icon">PDF</div>
-                <div class="class-name">Class 1</div>
-                <a
-                  href="#"
-                  onclick="alert('Downloading Class 1 Syllabus PDF...')"
-                  class="download-btn"
-                  >Download Syllabus</a
-                >
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('july')">
+                <h3>July 2025</h3>
+                <span class="dropdown-arrow">▼</span>
               </div>
-
-              <div class="class-card">
-                <div class="pdf-icon">PDF</div>
-                <div class="class-name">Class 2</div>
-                <a
-                  href="#"
-                  onclick="alert('Downloading Class 2 Syllabus PDF...')"
-                  class="download-btn"
-                  >Download Syllabus</a
-                >
+              <div class="month-content" id="july">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">15, 22</span>
+                    <span class="event-description">Weekly Test Schedule</span>
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">31</span>
+                    <span class="event-description activity"
+                      >Parent Teacher Meeting</span
+                    >
+                  </li>
+                </ul>
               </div>
+            </div>
 
-              <div class="class-card">
-                <div class="pdf-icon">PDF</div>
-                <div class="class-name">Class 3</div>
-                <a
-                  href="#"
-                  onclick="alert('Downloading Class 3 Syllabus PDF...')"
-                  class="download-btn"
-                  >Download Syllabus</a
-                >
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('august')">
+                <h3>August 2025</h3>
+                <span class="dropdown-arrow">▼</span>
               </div>
-
-              <div class="class-card">
-                <div class="pdf-icon">PDF</div>
-                <div class="class-name">Class 4</div>
-                <a
-                  href="#"
-                  onclick="alert('Downloading Class 4 Syllabus PDF...')"
-                  class="download-btn"
-                  >Download Syllabus</a
-                >
+              <div class="month-content" id="august">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">7</span>
+                    <span class="event-description holiday"
+                      >Singing Comp. Cl. N - 5+Hindi Speech 6-12</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">12</span>
+                    <span class="event-description exam"
+                      >Singing Comp. Cl 6-12+Hindi Speech N - 5</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">15</span>
+                    <span class="event-description exam"
+                      >Independence Day (09:00 a.m. to 11:30 a.m)</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">5, 19, 26</span>
+                    <span class="event-description exam"
+                      >Weekly Test Schedule</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">31</span>
+                    <span class="event-description exam"
+                      >Parent Teacher Meeting</span
+                    >
+                  </li>
+                </ul>
               </div>
+            </div>
 
-              <div class="class-card">
-                <div class="pdf-icon">PDF</div>
-                <div class="class-name">Class 5</div>
-                <a
-                  href="#"
-                  onclick="alert('Downloading Class 5 Syllabus PDF...')"
-                  class="download-btn"
-                  >Download Syllabus</a
-                >
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('september')">
+                <h3>September</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="september">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">5</span>
+                    <span class="event-description holiday"
+                      >Teacher's Day Celebration</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">14-29</span>
+                    <span class="event-description exam"
+                      >Term Examination - I</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('october')">
+                <h3>October</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="october">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">3</span>
+                    <span class="event-description holiday"
+                      >Display of 1st term answersheet to the students</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">7</span>
+                    <span class="event-description exam"
+                      >Display of 1st term answersheet to the Parents (8 a.m. to
+                      12 noon)</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">28</span>
+                    <span class="event-description exam"
+                      >1st Term Result distribution (8 a.m. to 12:30 p.m.)</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('november')">
+                <h3>November</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="november">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">1-6</span>
+                    <span class="event-description holiday"
+                      >Preparation of Club Activity</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">7</span>
+                    <span class="event-description exam"
+                      >Presentation of Dr., G.K., Hindi & So. Club
+                      Activity</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">9</span>
+                    <span class="event-description exam"
+                      >Presentation of English, Sci. & Maths. Club
+                      Activity</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">4, 18, 25</span>
+                    <span class="event-description exam"
+                      >Weekly Test Schedule</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">23</span>
+                    <span class="event-description exam">Annual Day</span>
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">30</span>
+                    <span class="event-description exam"
+                      >Parent Teacher Meeting</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('december')">
+                <h3>December</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="december">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">16</span>
+                    <span class="event-description holiday">Sports Meet</span>
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">4, 11, 18</span>
+                    <span class="event-description exam"
+                      >Weekly Test Schedule</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('january')">
+                <h3>January</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="january">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">8</span>
+                    <span class="event-description holiday"
+                      >English Speech Cl. N - 5</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">26</span>
+                    <span class="event-description exam">Republic Day</span>
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">6, 13, 20, 27</span>
+                    <span class="event-description exam"
+                      >Weekly Test Schedule</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">31</span>
+                    <span class="event-description exam"
+                      >Parent Teacher Meeting</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('february')">
+                <h3>February</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="february">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">21-16 March</span>
+                    <span class="event-description holiday"
+                      >Term Examination-II</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="month-card">
+              <div class="month-header" onclick="toggleMonth('march')">
+                <h3>March</h3>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="month-content" id="march">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <span class="event-date">March 2024</span>
+                    <span class="event-description holiday"
+                      >Result Distribution</span
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -668,7 +769,7 @@
       <div id="infrastructure" class="page">
         <div class="infrastructure-grid">
           <div class="infrastructure-card">
-            <img src="images/library.jpg" alt="Library" />
+            <img src="images/saibabad/Library.jpeg" alt="Library" />
             <div class="content">
               <h3>Modern Library</h3>
               <p>
@@ -678,73 +779,43 @@
             </div>
           </div>
           <div class="infrastructure-card">
-            <img src="images/computer-lab.jpg" alt="Science Lab" />
+            <img src="images/saibabad/sd Computer Lab.jpg" alt="Science Lab" />
             <div class="content">
-              <h3>Science Laboratories</h3>
-              <p>State-of-the-art labs for Physics, Chemistry, and Biology.</p>
+              <h3>Computer Labs</h3>
+              <p>State-of-the-art labs for Computer Science.</p>
             </div>
           </div>
           <div class="infrastructure-card">
-            <img src="images/sports-and-recreation.jpg" alt="Sports Complex" />
+            <img src="images/saibabad/Chemistry Lab.jpg" alt="Sports Complex" />
             <div class="content">
-              <h3>Sports Complex</h3>
+              <h3>Chemistry Labs</h3>
+              <p>School has labs for Chemistry Practicals.</p>
+            </div>
+          </div>
+          <div class="infrastructure-card">
+            <img
+              src="images/saibabad/Training Program.jpg"
+              alt="Sports Complex"
+            />
+            <div class="content">
+              <h3>Training Programs</h3>
               <p>
-                Multiple sports facilities including indoor and outdoor courts.
+                Training programs for teachers to maintain quality education.
               </p>
             </div>
           </div>
           <div class="infrastructure-card">
-            <img src="images/sports-and-recreation.jpg" alt="Sports Complex" />
+            <img src="images/saibabad/Bio Lab.jpg" alt="Sports Complex" />
             <div class="content">
-              <h3>Sports Complex</h3>
-              <p>
-                Multiple sports facilities including indoor and outdoor courts.
-              </p>
+              <h3>Biology Labs</h3>
+              <p>State-of-the-art biology labs.</p>
             </div>
           </div>
           <div class="infrastructure-card">
-            <img src="images/science-labs.jpg" alt="Sports Complex" />
+            <img src="images/saibabad/sports.jpeg" alt="Sports Complex" />
             <div class="content">
-              <h3>Sports Complex</h3>
-              <p>
-                Multiple sports facilities including indoor and outdoor courts.
-              </p>
-            </div>
-          </div>
-          <div class="infrastructure-card">
-            <img src="images/interactive-classroom.jpg" alt="Sports Complex" />
-            <div class="content">
-              <h3>Sports Complex</h3>
-              <p>
-                Multiple sports facilities including indoor and outdoor courts.
-              </p>
-            </div>
-          </div>
-          <div class="infrastructure-card">
-            <img src="images/school-garden.jpg" alt="Sports Complex" />
-            <div class="content">
-              <h3>Sports Complex</h3>
-              <p>
-                Multiple sports facilities including indoor and outdoor courts.
-              </p>
-            </div>
-          </div>
-          <div class="infrastructure-card">
-            <img src="images/school-campus.webp" alt="Sports Complex" />
-            <div class="content">
-              <h3>Sports Complex</h3>
-              <p>
-                Multiple sports facilities including indoor and outdoor courts.
-              </p>
-            </div>
-          </div>
-          <div class="infrastructure-card">
-            <img src="images/creative-arts-studio.jpg" alt="Sports Complex" />
-            <div class="content">
-              <h3>Creative Arts Studio</h3>
-              <p>
-                Multiple sports facilities including indoor and outdoor courts.
-              </p>
+              <h3>Sports Facilites</h3>
+              <p>Sports facilities for cricket and football</p>
             </div>
           </div>
         </div>
@@ -766,7 +837,6 @@
         </div>
       </div>
 
-      <!-- Contact page -->
       <div id="contact" class="page">
         <div class="hero">
           <h1>Contact Us</h1>
@@ -777,19 +847,19 @@
           <div class="contact-card">
             <div class="contact-card-icon">📞</div>
             <h3>Phone</h3>
-            <p>9451451794</p>
+            <p>8052885522</p>
           </div>
 
           <div class="contact-card">
             <div class="contact-card-icon">✉️</div>
             <h3>Email</h3>
-            <p>info@newrsj.in</p>
+            <p>nrsjphandia@gmail.com</p>
           </div>
 
           <div class="contact-card">
             <div class="contact-card-icon">📍</div>
             <h3>Address</h3>
-            <p>Ustapur Mahmoodabad, Chhatnag road, Jhunsi, Prayagraj</p>
+            <p>Jamshedpur Lalapur, Handia, Prayagraj, 221508</p>
           </div>
         </div>
 
@@ -797,7 +867,7 @@
           <h2 style="margin-bottom: 1rem; color: #2c3e50">Our Location</h2>
           <div class="map-container">
             <img
-              src="images/vasant-vihar/map.png"
+              src="images/saibabad/saibabad-map.png"
               alt="School Location Map"
               style="width: 100%; height: 100%; object-fit: cover"
             />
@@ -847,8 +917,8 @@
             <!-- Faculty Section -->
             <div id="faculty-content" class="academic-content active">
               <div class="grid-layout">
-                <img src="images/faculty-meeting.jpg" alt="Faculty meeting" />
-                <img src="images/teaching-session.jpg" alt="Teaching session" />
+                <img src="images/saibabad/NRSJ FAMILY.jpg" alt="Faculty meeting" />
+                <img src="images/saibabad/Training Program.jpg" alt="Teaching session" />
                 <div class="full-width">
                   <h2>Our Faculty</h2>
                   <p>
@@ -872,8 +942,8 @@
               style="display: none"
             >
               <div class="grid-layout">
-                <img src="images/school-garden.jpg" alt="Morning assembly" />
-                <img src="images/library.jpg" alt="Special assembly" />
+                <img src="images/saibabad/Annual SportsDay.jpg" alt="Morning assembly" />
+                <img src="images/saibabad/sd 1st day school.jpg" alt="Special assembly" />
                 <div class="full-width">
                   <h2>School Assembly</h2>
                   <p>
@@ -981,8 +1051,8 @@
               style="display: none"
             >
               <div class="grid-layout">
-                <img src="/api/placeholder/400/250" alt="Sports activities" />
-                <img src="/api/placeholder/400/250" alt="Cultural activities" />
+                <img src="/images/saibabad/sd 15 august.jpg" alt="Sports activities" />
+                <img src="/images/saibabad/sd Birthday Celebration2.jpg" alt="Cultural activities" />
                 <div class="full-width">
                   <h2>Extra-Curricular Activities</h2>
                   <p>
@@ -1002,8 +1072,8 @@
               style="display: none"
             >
               <div class="grid-layout">
-                <img src="/api/placeholder/400/250" alt="House competition" />
-                <img src="/api/placeholder/400/250" alt="House meeting" />
+                <img src="/images/saibabad/sd Earth Day3.jpg" alt="House competition" />
+                <img src="/images/saibabad/sd father's day2.jpg" alt="House meeting" />
                 <div class="full-width">
                   <h2>House System</h2>
                   <p>
@@ -1302,8 +1372,24 @@
         <div class="gallery">
           <!-- Generate 20 image placeholders for Class 10 -->
           <div class="gallery-item">
-            <img src="images/placeholder.webp" alt="Class 10 Student 1" />
-            <div class="gallery-caption">Aisha Patel - 98.8%</div>
+            <img src="images/saibabad/topper-1.jpeg" alt="Class 10 Student 1" />
+            <div class="gallery-caption">Amritansh Singh</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/saibabad/topper-2.jpeg" alt="Class 10 Student 1" />
+            <div class="gallery-caption">Aeram Firdosh</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/saibabad/topper-3.jpeg" alt="Class 10 Student 1" />
+            <div class="gallery-caption">Saharsh Kumar Singh</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/saibabad/topper-4.jpeg" alt="Class 10 Student 1" />
+            <div class="gallery-caption">Divyanshu Saroj</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/saibabad/topper-5.jpeg" alt="Class 10 Student 1" />
+            <div class="gallery-caption">Sahil Yadav</div>
           </div>
           <!-- Repeat similar gallery-item divs 19 more times with different names and scores -->
         </div>
@@ -1319,10 +1405,6 @@
         </div>
         <div class="gallery">
           <!-- Generate 20 image placeholders for Class 12 -->
-          <div class="gallery-item">
-            <img src="images/placeholder.webp" alt="Class 12 Student 1" />
-            <div class="gallery-caption">Rahul Shah - 97.6%</div>
-          </div>
           <!-- Repeat similar gallery-item divs 19 more times with different names and scores -->
         </div>
       </div>
@@ -1336,24 +1418,6 @@
         <div class="accordion">
           <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <h3>2024-25</h3>
-              <span class="accordion-arrow">▼</span>
-            </div>
-            <div class="accordion-content">
-              <div class="accordion-content-inner">
-                <ul class="subjects-list">
-                  <li style="text-align: center">
-                    <p style="font-weight: bold">John Doe</p>
-                    <p style="margin-top: 2px">Class: XII - B</p>
-                    <p style="margin-top: 2px">Date: 12/01/2023</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
               <h3>2023-24</h3>
               <span class="accordion-arrow">▼</span>
             </div>
@@ -1361,27 +1425,53 @@
               <div class="accordion-content-inner">
                 <ul class="subjects-list">
                   <li style="text-align: center">
-                    <p style="font-weight: bold">John Doe</p>
-                    <p style="margin-top: 2px">Class: XII - B</p>
-                    <p style="margin-top: 2px">Date: 12/01/2023</p>
+                    <p style="font-weight: bold">Manas Singh</p>
+                    <p style="margin-top: 2px">Class: X</p>
+                    <p style="margin-top: 2px">Date: 08/09/2023</p>
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <h3>2022-23</h3>
-              <span class="accordion-arrow">▼</span>
             </div>
             <div class="accordion-content">
               <div class="accordion-content-inner">
                 <ul class="subjects-list">
                   <li style="text-align: center">
-                    <p style="font-weight: bold">John Doe</p>
-                    <p style="margin-top: 2px">Class: XII - B</p>
-                    <p style="margin-top: 2px">Date: 12/01/2023</p>
+                    <p style="font-weight: bold">Anubhav Pushkar</p>
+                    <p style="margin-top: 2px">Class: X</p>
+                    <p style="margin-top: 2px">Date: 26/08/2023</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="subjects-list">
+                  <li style="text-align: center">
+                    <p style="font-weight: bold">Pratyush Kumar</p>
+                    <p style="margin-top: 2px">Class: X</p>
+                    <p style="margin-top: 2px">Date: 19/07/2023</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="subjects-list">
+                  <li style="text-align: center">
+                    <p style="font-weight: bold">Amit Rao</p>
+                    <p style="margin-top: 2px">Class: X</p>
+                    <p style="margin-top: 2px">Date: 19/07/2023</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="subjects-list">
+                  <li style="text-align: center">
+                    <p style="font-weight: bold">Prince Yadav</p>
+                    <p style="margin-top: 2px">Class: X</p>
+                    <p style="margin-top: 2px">Date: 19/07/2023</p>
                   </li>
                 </ul>
               </div>
@@ -1398,11 +1488,34 @@
         </div>
 
         <div class="facilities-grid">
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="
+                background-image: url('images/saibabad/sahibabd-campus.jpg');
+              "
+            ></div>
+            <div class="facility-content">
+              <h2>CAMPUS</h2>
+              <p>
+                The School campus is spread over an area of 2.9 acres in Jhusi,
+                Allahabad. The School has a well splendid play ground containing
+                200 meters run track including basketball court and host of
+                other facilities for overall growth of child. The School offers
+                single gate entry/exit keeping an eye on overall security of all
+                present in the school through the modern techniques available.
+                The school also maintains modern fire detection and fire
+                fighting equipments.
+              </p>
+            </div>
+          </div>
 
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/Computer\ Lab.jpg')"
+              style="
+                background-image: url('images/saibabad/sd\ Computer\ Lab.jpg');
+              "
             ></div>
             <div class="facility-content">
               <h2>COMPUTER LAB</h2>
@@ -1422,20 +1535,27 @@
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/smart\ classroom.jpg')"
+              style="
+                background-image: url('images/saibabad/Chemistry\ Lab.jpg');
+              "
             ></div>
             <div class="facility-content">
-              <h2>SMART CLASS</h2>
+              <h2>CHEMISTRY LAB</h2>
               <p>
-                The School management have been successful in bringing
-                technology in classrooms with the introduction of interactive
-                Whiteboards and Smart Boards. These allow students to interact
-                with the lesson content through the softwares provided by
-                EDUCOMP. This helps in widening their analytical faculties.
-                Classrooms are spacious and have adequate cooling and lighting
-                through fans and tubelights. The number of students in each
-                class is restricted, so that the teachers can give individual
-                attention to each student.
+                The school management has established a state-of-the-art
+                Chemistry Lab to provide students with hands-on learning
+                experiences and practical exposure to scientific concepts. The
+                lab is equipped with modern apparatus, glassware, and chemicals,
+                ensuring safety and functionality for experiments. Advanced
+                tools like digital pH meters, burettes, and spectrophotometers
+                allow students to explore complex chemical processes with
+                precision. The lab is spacious, well-ventilated, and
+                illuminated, creating a conducive environment for
+                experimentation. The number of students per session is limited,
+                enabling teachers to provide individual guidance and closely
+                monitor the progress of each student. This emphasis on practical
+                learning enhances analytical thinking and scientific curiosity
+                among students.
               </p>
             </div>
           </div>
@@ -1443,7 +1563,7 @@
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/library.jpg')"
+              style="background-image: url('images/saibabad/Library.jpeg')"
             ></div>
             <div class="facility-content">
               <h2>LIBRARY</h2>
@@ -1463,17 +1583,25 @@
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/science\ club\ act..jpg')"
+              style="background-image: url('images/saibabad/Bio\ Lab.jpg')"
             ></div>
             <div class="facility-content">
               <h2>SCIENCE LAB</h2>
               <p>
-                The School offers well equipped modern labs for Physics,
-                Chemistry, Biology, Mathematics & Social-Studies as per the
-                settled standards. It helps students in inculcating scientific
-                temper through controlled experiments as per the guidelines. The
-                Labs are also linked through the various softwares wherein
-                student can get first hand experience of experiments.
+                The school management has established a modern Biology Lab to
+                foster a deep understanding of life sciences through practical
+                learning. The lab is equipped with high-quality microscopes,
+                preserved specimens, anatomical models, and other advanced tools
+                that allow students to explore biological concepts hands-on.
+                Facilities for conducting experiments in areas like
+                microbiology, genetics, and ecology are readily available,
+                ensuring a comprehensive learning experience. The lab is
+                well-ventilated, brightly lit, and designed to provide a safe
+                and organized environment for students. With a restricted number
+                of students per session, teachers can offer personalized
+                attention, ensuring effective guidance during practical
+                sessions. This approach nurtures curiosity, observational
+                skills, and a scientific temperament in students.
               </p>
             </div>
           </div>
@@ -1481,7 +1609,7 @@
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/GK\ club\ activity.jpg')"
+              style="background-image: url('images/saibabad/lang-lab.jpg')"
             ></div>
             <div class="facility-content">
               <h2>LANGUAGE LAB</h2>
@@ -1498,7 +1626,7 @@
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/school\ office.jpg')"
+              style="background-image: url('images/saibabad/med-room.jpg')"
             ></div>
             <div class="facility-content">
               <h2>MEDICAL ROOM</h2>
@@ -1516,7 +1644,7 @@
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/GK\ club\ activity.jpg')"
+              style="background-image: url('images/saibabad/transport.jpg')"
             ></div>
             <div class="facility-content">
               <h2>TRANSPORT</h2>
@@ -1531,10 +1659,34 @@
               </p>
             </div>
           </div>
+
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/dance.jpg')"
+              style="background-image: url('images/saibabad/sports.jpeg')"
+            ></div>
+            <div class="facility-content">
+              <h2>SPORTS</h2>
+              <p>
+                The sports and games are integral part of education. Some of the
+                outdoor sporting facilities provided by the School include
+                basketball court, badminton courts, 200 meter athletic track,
+                facility for football and cricket. A well trained Physical
+                Education Instructor is appointed to ensure the provision of a
+                relevant environment for the extra curricular activities of the
+                students. Regular sports events are organized in the School.
+                Besides the sports activities, school provides specialized Yoga
+                Teachers who teach the student various asanas and breathing
+                exercises. The School also provides training of Taekwondo (self
+                defence).
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div
+              class="facility-image"
+              style="background-image: url('images/saibabad/arts.jpg')"
             ></div>
             <div class="facility-content">
               <h2>ARTS</h2>
@@ -1555,7 +1707,7 @@
           <div class="facility-card">
             <div
               class="facility-image"
-              style="background-image: url('images/vasant-vihar/scout\ n\ guide.jpg')"
+              style="background-image: url('images/saibabad/book.jpg')"
             ></div>
             <div class="facility-content">
               <h2>BOOK/STATIONARY</h2>
@@ -1593,35 +1745,23 @@
               <h2>2024-25</h2>
               <div class="photo-grid">
                 <div class="photo-item">
-                  <img src="images/vasant-vihar/annual function.jpg" alt="Annual Day 2024" />
+                  <img src="images/saibabad/Annual SportsDay (1).jpg" alt="Annual Day 2024" />
                 </div>
                 <div class="photo-item">
-                  <img src="images/vasant-vihar/children day.jpg" alt="Sports Day 2024" />
+                  <img src="images/saibabad/arts.jpg" alt="Sports Day 2024" />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="images/vasant-vihar/christmas.jpg"
+                    src="images/saibabad/Library.jpeg"
                     alt="Science Exhibition 2024"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="/images/vasant-vihar/dance.jpg"
+                    src="images/saibabad/arts.jpg"
                     alt="Cultural Festival 2024"
                   />
                 </div>
-                <div class="photo-item">
-                    <img
-                      src="images/vasant-vihar/drawing club activity.jpg"
-                      alt="Cultural Festival 2024"
-                    />
-                  </div>
-                  <div class="photo-item">
-                    <img
-                      src="/images/vasant-vihar/earth day.jpg"
-                      alt="Cultural Festival 2024"
-                    />
-                  </div>
               </div>
             </div>
 
@@ -1630,40 +1770,22 @@
               <div class="photo-grid">
                 <div class="photo-item">
                   <img
-                    src="images/vasant-vihar/GK club activity.jpg"
+                    src="images/saibabad/NRSJ FAMILY.jpg"
                     alt="Graduation Day 2023"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="images/vasant-vihar/janmashtami.jpg"
+                    src="/images/saibabad/sd 15 august.jpg"
                     alt="Annual Sports Meet 2023"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="images/vasant-vihar/hindi club activity.jpg"
+                    src="images/saibabad/sd Birthday Celebration2.jpg"
                     alt="Art Exhibition 2023"
                   />
                 </div>
-                <div class="photo-item">
-                    <img
-                      src="images/vasant-vihar/labour day.jpg"
-                      alt="Graduation Day 2023"
-                    />
-                  </div>
-                  <div class="photo-item">
-                    <img
-                      src="images/vasant-vihar/maths club activity.jpg"
-                      alt="Annual Sports Meet 2023"
-                    />
-                  </div>
-                  <div class="photo-item">
-                    <img
-                      src="images/vasant-vihar/mother day.jpg"
-                      alt="Art Exhibition 2023"
-                    />
-                  </div>
               </div>
             </div>
 
@@ -1671,29 +1793,14 @@
               <h2>2022-23</h2>
               <div class="photo-grid">
                 <div class="photo-item">
-                  <img src="images/vasant-vihar/medal distribution.jpg" alt="School Day 2022" />
+                  <img src="/images/saibabad/Training Program.jpg" alt="School Day 2022" />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="images/vasant-vihar/pt display.jpg"
+                    src="/images/saibabad/sd 1st day school.jpg"
                     alt="Cultural Events 2022"
                   />
                 </div>
-                <div class="photo-item">
-                  <img src="/images/vasant-vihar/scout n guide.jpg" alt="Sports Day 2022" />
-                </div>
-                <div class="photo-item">
-                    <img src="images/vasant-vihar/PTM.jpg" alt="School Day 2022" />
-                  </div>
-                  <div class="photo-item">
-                    <img
-                      src="images/vasant-vihar/social club.jpg"
-                      alt="Cultural Events 2022"
-                    />
-                  </div>
-                  <div class="photo-item">
-                    <img src="/images/vasant-vihar/sports day.jpg" alt="Sports Day 2022" />
-                  </div>
               </div>
             </div>
           </div>
@@ -1701,10 +1808,7 @@
           <div id="video-gallery" class="gallery-section">
             <div class="video-grid">
               <div class="video-item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zxeFBDSdzJo?si=BDN1sldvVywLEIP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="video-item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lzCs5A_FZdI?si=9LLvHQzUXhFIzKqZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aDymOr7t2AI?si=jTapNLX3CjdX_cx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
