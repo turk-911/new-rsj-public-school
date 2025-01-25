@@ -246,3 +246,31 @@ function toggleMonth(monthId) {
   content.classList.toggle('active');
   arrow.textContent = content.classList.contains('active') ? '▲' : '▼';
 }
+
+
+// landing page
+document.addEventListener('DOMContentLoaded', () => {
+  // Always show landing page on first load or when no campus is selected
+  if (!localStorage.getItem('campusSelected')) {
+      // Do nothing - the landing page is already the entry point
+  } else {
+      // If a campus was previously selected, go to main site
+      const selectedCampus = localStorage.getItem('selectedCampus') || 'downtown';
+      changeBranch(selectedCampus);
+  }
+});
+
+function selectCampus(campus) {
+  // Mark that a campus has been selected
+  localStorage.setItem('campusSelected', 'true');
+  localStorage.setItem('selectedCampus', campus);
+  
+  // Redirect to main website
+  window.location.href = 'main.html'; // Rename your existing website HTML to main.html
+}
+
+// Optional: Add a way to reset and show landing page again
+function resetCampusSelection() {
+  localStorage.removeItem('campusSelected');
+  localStorage.removeItem('selectedCampus');
+}
