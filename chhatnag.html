@@ -5,45 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New RSJ Public School</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style></style>
   </head>
 
   <body>
     <header>
-      <div class="header-content">
-        <div class="logo">
-          <img src="images/saibabad/logoFull.png" alt="" />
+      <div class="header-content" style="display: flex;">
+        <img src="images/saibabad/logoFull.png" height="50px" width="200px" />
+        <div>
+          <div class="logo" style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+            <p style="color: white; font-size: xx-large; text-align: center;">New R.S.J. Public School</p>
+          </div>
+          <button class="mobile-menu-btn">☰</button>
+          <nav>
+            <a href="#" onclick="showPage('home')">Home</a>
+            <div class="nav-item">
+              <a href="#">About</a>
+              <div class="dropdown">
+                <a href="#" onclick="showPage('about-us')" style="color: black"
+                  >About Us</a
+                >
+                <a
+                  href="#"
+                  onclick="showPage('annual-planner')"
+                  style="color: black"
+                  >Annual Planner</a
+                >
+                <a
+                  href="#"
+                  onclick="showPage('infrastructure')"
+                  style="color: black"
+                  >Infrastructure</a
+                >
+                <a href="#" onclick="showPage('holidays')" style="color: black"
+                  >Holiday List</a
+                >
+              </div>
+            </div>
+            <a href="#" onclick="showPage('academics')">Academics</a>
+            <a href="#" onclick="showPage('admissions')">Admission</a>
+            <div class="nav-item">
+              <a href="#">Achievements</a>
+              <div class="dropdown-content">
+                <a href="#" onclick="showPage('class12')" style="color: black;">Class 12 Toppers</a>
+                <a href="#" onclick="showPage('class10')" style="color: black;">Class 10 Toppers</a>
+              </div>
+            </div>
+            <a href="#" onclick="showPage('transfer')">Transfer Certificate</a>
+            <a href="#" onclick="showPage('facilities')">Facilities</a>
+            <a href="#" onclick="showPage('gallery')">Gallery</a>
+            <a href="#" onclick="showPage('contact')">Contact Us</a>
+          </nav>
         </div>
-        <button class="mobile-menu-btn">☰</button>
-        <nav>
-          <a href="#" onclick="showPage('home')">Home</a>
-          <div class="nav-item">
-            <a href="#">About</a>
-            <div class="dropdown">
-              <a href="#" onclick="showPage('about-us')">About Us</a>
-              <a href="#" onclick="showPage('annual-planner')"
-                >Annual Planner</a
-              >
-              <a href="#" onclick="showPage('infrastructure')"
-                >Infrastructure</a
-              >
-              <a href="#" onclick="showPage('holidays')">Holiday List</a>
-            </div>
-          </div>
-          <a href="#" onclick="showPage('academics')">Academics</a>
-          <a href="#" onclick="showPage('admissions')">Admission</a>
-          <div class="nav-item">
-            <a href="#">Achievements</a>
-            <div class="dropdown-content">
-              <a href="#" onclick="showPage('class10')">Class 10 Toppers</a>
-              <a href="#" onclick="showPage('class12')">Class 12 Toppers</a>
-            </div>
-          </div>
-          <a href="#" onclick="showPage('transfer')">Transfer Certificate</a>
-          <a href="#" onclick="showPage('facilities')">Facilities</a>
-          <a href="#" onclick="showPage('gallery')">Gallery</a>
-          <a href="#" onclick="showPage('contact')">Contact Us</a>
-        </nav>
       </div>
     </header>
 
@@ -56,7 +76,7 @@
             New R.S.J Public School had a very humble beginning in the year
             2001. The school now has well splendid campus at the Recreational
             Study Junction, Ustapur-Mahmoodabad, chhatnag road, Jhunsi,
-            Allahabad. Since its inception, the school has emboldened the ideal
+            Prayagraj. Since its inception, the school has emboldened the ideal
             of it’s being a secular place of learning and has always remained
             open for all the sections of society.
           </p>
@@ -65,13 +85,23 @@
         <div id="branch1" class="branch-content active">
           <div class="hero">
             <h2>Chhatnag Branch</h2>
-            <p>JAMSHEDPUR LALAPUR, HANDIA, PRAYAGRAJ, 221508</p>
+            <p>Ustapur-Mahmoodabad, Chhatnag Road, Jhunsi, Prayagraj</p>
           </div>
-          <img
-            src="images/chhatnag/chhatnag-campus.jpg"
-            alt="Branch 1 Campus"
-            class="image"
-          />
+          <video
+            autoplay
+            muted
+            loop
+            class="video"
+            onclick="slowDown()"
+            id="video"
+            style="width: 100%; border-radius: 1%;"
+          >
+            <source
+              src="images/chhatnag/chhatnag-campus.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         <div id="branch2" class="branch-content">
@@ -139,7 +169,7 @@
               </div>
               <div class="carousel-slide">
                 <img
-                  src="images/chhatnag/Yoga Activity.jpg"
+                  src="images/chhatnag/yoga-photo.jpg"
                   alt="Sports facilities"
                 />
                 <div class="carousel-caption">Yoga Classes</div>
@@ -161,7 +191,7 @@
           <div class="bento-grid">
             <div class="bento-item principal-message">
               <img
-                src="images/chhatnag/principal.jpg"
+                src="images/chhatnag/principal-chhatnag.jpg"
                 alt="Principal"
                 class="principal-img"
               />
@@ -349,7 +379,7 @@
             New R.S.J Public School had a very humble beginning in the year
             2001. The school now has well splendid campus at the Recreational
             Study Junction, Ustapur-Mahmoodabad, chhatnag road, Jhunsi,
-            Allahabad. Since its inception, the school has emboldened the ideal
+            Prayagraj. Since its inception, the school has emboldened the ideal
             of it’s being a secular place of learning and has always remained
             open for all the sections of society. The school’s motto “Forward
             Ever” is the basic ideal under which the school is governed keeping
@@ -829,6 +859,16 @@
                 </button>
               </li>
               <li>
+                <button onclick="showAcademicContent('calendar')">
+                  Calendar
+                </button>
+              </li>
+              <li>
+                <button onclick="showAcademicContent('holiday')">
+                  Holiday List
+                </button>
+              </li>
+              <li>
                 <button onclick="showAcademicContent('assembly')">
                   Assembly
                 </button>
@@ -860,8 +900,14 @@
             <!-- Faculty Section -->
             <div id="faculty-content" class="academic-content active">
               <div class="grid-layout">
-                <img src="images/chhatnag/RSJ Family.jpg" alt="Faculty meeting" />
-                <img src="images/chhatnag/Classroom 1.jpg" alt="Teaching session" />
+                <img
+                  src="images/chhatnag/RSJ Family.jpg"
+                  alt="Faculty meeting"
+                />
+                <img
+                  src="images/chhatnag/Classroom 1.jpg"
+                  alt="Teaching session"
+                />
                 <div class="full-width">
                   <h2>Our Faculty</h2>
                   <p>
@@ -878,6 +924,749 @@
               </div>
             </div>
 
+            <!-- Calendar section-->
+            <div
+              id="calendar-content"
+              class="academic-content"
+              style="display: none"
+            >
+              <div class="planner-section">
+                <div class="planner-header">
+                  <h2>Academic Calendar 2025-26</h2>
+                </div>
+
+                <div class="month-cards">
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('april-content')"
+                    >
+                      <h3>April</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="april-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">1</span>
+                          <span class="event-description activity"
+                            >New academic session begins</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">7</span>
+                          <span class="event-description"
+                            >Regular time table distribution</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">8</span>
+                          <span class="event-description activity"
+                            >Regular class begins</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">30</span>
+                          <span class="event-description activity"
+                            >Parent Teacher Meeting</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('may-content')"
+                    >
+                      <h3>May</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="may-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">3,10,17 and 24</span>
+                          <span class="event-description activity"
+                            >Weekly Test Schedule + Talent Hunt</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">5</span>
+                          <span class="event-description"
+                            >Drawing Club Activity</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">19</span>
+                          <span class="event-description activity"
+                            >GK Club Activity</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('july-content')"
+                    >
+                      <h3>July</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="july-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">1</span>
+                          <span class="event-description activity"
+                            >Reopen school after Summer Vacation</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">5, 12, 19 and 26</span>
+                          <span class="event-description"
+                            >Weekly Test Schedule and Talent Hunt</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">31</span>
+                          <span class="event-description activity"
+                            >Parents Teacher Meeting</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('august-content')"
+                    >
+                      <h3>August</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="august-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">8</span>
+                          <span class="event-description activity"
+                            >English Club Activity</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">2 and 23</span>
+                          <span class="event-description"
+                            >Weekly Test Schedule and Talent Hunt</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">15</span>
+                          <span class="event-description activity"
+                            >Independence Day (08:30 am to 12:30 am)
+                          </span>
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">30</span>
+                          <span class="event-description activity"
+                            >Parents Teacher Meeting</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('september-content')"
+                    >
+                      <h3>September</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="september-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">5</span>
+                          <span class="event-description activity"
+                            >Teacher's Day Celebration</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">9</span>
+                          <span class="event-description"
+                            >Hindi Club Activity</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">11-27</span>
+                          <span class="event-description activity"
+                            >Term Examination - I</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('october-content')"
+                    >
+                      <h3>October</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="october-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">4</span>
+                          <span class="event-description activity"
+                            >Display of 1st Term Answer Sheet to students</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">14</span>
+                          <span class="event-description"
+                            >Display of 1st Term Answer Sheet to parents (08:30
+                            am to 12:30 pm)
+                          </span>
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">31</span>
+                          <span class="event-description"
+                            >1st Term Result Distribution + Club Activity
+                            Exhibition
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('november-content')"
+                    >
+                      <h3>November</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="november-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">8, 15</span>
+                          <span class="event-description activity"
+                            >Weekly Test Schedule + Talent Hunt</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">10</span>
+                          <span class="event-description"
+                            >Social Study Club Activity
+                          </span>
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">14</span>
+                          <span class="event-description">Bal Mela</span>
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">18</span>
+                          <span class="event-description"
+                            >Science Club Activity</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">24, 25</span>
+                          <span class="event-description">Sports Meet</span>
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">30</span>
+                          <span class="event-description"
+                            >Parents Teacher Meeting</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('december-content')"
+                    >
+                      <h3>December</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="december-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">7, 21, 28</span>
+                          <span class="event-description activity"
+                            >Test Schedule + Talent Hunt</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">12</span>
+                          <span class="event-description">Annual Day </span>
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">22</span>
+                          <span class="event-description"
+                            >Maths Club Activity</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('january-content')"
+                    >
+                      <h3>January</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="january-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">3, 10, 17, 24</span>
+                          <span class="event-description activity"
+                            >Weekly Test Schedule + Talent Hunt</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">26</span>
+                          <span class="event-description"
+                            >Republic Day (09:00am to 12:30pm)</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">31</span>
+                          <span class="event-description"
+                            >Parents Teacher Meeting</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('february-content')"
+                    >
+                      <h3>February</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="february-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">20 Feb to 17 Mar</span>
+                          <span class="event-description activity"
+                            >Term II Examination</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('march-content')"
+                    >
+                      <h3>March</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="march-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">March 2026</span>
+                          <span class="event-description activity"
+                            >Result Distribution(08:30 am to 12:30 pm)</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Holiday section -->
+            <div
+              id="holiday-content"
+              class="academic-content"
+              style="display: none"
+            >
+              <div class="planner-section">
+                <div class="planner-header">
+                  <h2>Holiday Calendar 2025-26</h2>
+                </div>
+
+                <div class="month-cards">
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-april-content')"
+                    >
+                      <h3>April</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-april-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">06.06.2025</span>
+                          <span class="event-description activity"
+                            >Ram Navmi</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">14.04.2024</span>
+                          <span class="event-description"
+                            >Dr. B.R. Ambedkar Jayanti</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-may-content')"
+                    >
+                      <h3>May</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-may-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">12.05.2025</span>
+                          <span class="event-description activity"
+                            >Buddha Purnima</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('june-content')"
+                    >
+                      <h3>June</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="june-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">07.06.2025</span>
+                          <span class="event-description activity">Bakrid</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-july-content')"
+                    >
+                      <h3>July</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-july-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">06.07.2025</span>
+                          <span class="event-description activity"
+                            >Muharram</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-august-content')"
+                    >
+                      <h3>August</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-august-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">09.08.2025</span>
+                          <span class="event-description activity"
+                            >Rakshabandhan</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">16.08.2025</span>
+                          <span class="event-description"
+                            >Krishna Janamashtmi</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-september-content')"
+                    >
+                      <h3>September</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-september-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">05.09.2025</span>
+                          <span class="event-description activity"
+                            >Eid-ul-Milad</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date"
+                            >29.09.2025 to 02.10.2025</span
+                          >
+                          <span class="event-description"
+                            >Dusshera + Gandhi Jayanti
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-october-content')"
+                    >
+                      <h3>October</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-october-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date"
+                            >19.10.2025 to 23.10.2025</span
+                          >
+                          <span class="event-description activity"
+                            >Deepawali to Bhai Dooj</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">27.10.2025</span>
+                          <span class="event-description">Chhat Pooja </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-november-content')"
+                    >
+                      <h3>November</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-november-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">05.11.2025</span>
+                          <span class="event-description activity"
+                            >Gurunanak Jayanti</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-december-content')"
+                    >
+                      <h3>December</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-december-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">25.12.2025</span>
+                          <span class="event-description activity"
+                            >Christmas Day</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-january-content')"
+                    >
+                      <h3>January</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-january-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">14.01.2025</span>
+                          <span class="event-description activity"
+                            >Makar Sakranti</span
+                          >
+                        </li>
+                        <li class="event-item">
+                          <span class="event-date">23.01.2025</span>
+                          <span class="event-description">Vasant Panchmi</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-february-content')"
+                    >
+                      <h3>February</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-february-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date">15.02.2026</span>
+                          <span class="event-description activity"
+                            >Maha Shivratri</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="month-card">
+                    <div
+                      class="month-header"
+                      onclick="toggleMonth('holiday-march-content')"
+                    >
+                      <h3>March</h3>
+                      <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div
+                      class="month-content"
+                      id="holiday-march-content"
+                      style="display: none"
+                    >
+                      <ul class="event-list">
+                        <li class="event-item">
+                          <span class="event-date"
+                            >03.03.2025 to 05.03.2025</span
+                          >
+                          <span class="event-description activity">Holi</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Assembly Section -->
             <div
               id="assembly-content"
@@ -885,8 +1674,14 @@
               style="display: none"
             >
               <div class="grid-layout">
-                <img src="images/chhatnag/Dance Activity.jpg" alt="Morning assembly" />
-                <img src="images/chhatnag/English Activity.jpg" alt="Special assembly" />
+                <img
+                  src="images/chhatnag/assembly-photo.jpg"
+                  alt="Morning assembly"
+                />
+                <img
+                  src="images/chhatnag/stage-assembly.jpg"
+                  alt="Special assembly"
+                />
                 <div class="full-width">
                   <h2>School Assembly</h2>
                   <p>
@@ -994,8 +1789,14 @@
               style="display: none"
             >
               <div class="grid-layout">
-                <img src="images/chhatnag/Art & Craft Activity.jpg" alt="Sports activities" />
-                <img src="images/chhatnag/Green Day Activity.jpg" alt="Cultural activities" />
+                <img
+                  src="images/chhatnag/Art & Craft Activity.jpg"
+                  alt="Sports activities"
+                />
+                <img
+                  src="images/chhatnag/Green Day Activity.jpg"
+                  alt="Cultural activities"
+                />
                 <div class="full-width">
                   <h2>Extra-Curricular Activities</h2>
                   <p>
@@ -1015,8 +1816,14 @@
               style="display: none"
             >
               <div class="grid-layout">
-                <img src="images/chhatnag/International Yoga Day.jpg" alt="House competition" />
-                <img src="images/chhatnag/Festival Activity.jpg" alt="House meeting" />
+                <img
+                  src="images/chhatnag/International Yoga Day.jpg"
+                  alt="House competition"
+                />
+                <img
+                  src="images/chhatnag/Festival Activity.jpg"
+                  alt="House meeting"
+                />
                 <div class="full-width">
                   <h2>House System</h2>
                   <p>
@@ -1467,7 +2274,7 @@
               <h2>CAMPUS</h2>
               <p>
                 The School campus is spread over an area of 2.9 acres in Jhusi,
-                Allahabad. The School has a well splendid play ground containing
+                Prayagraj. The School has a well splendid play ground containing
                 200 meters run track including basketball court and host of
                 other facilities for overall growth of child. The School offers
                 single gate entry/exit keeping an eye on overall security of all
@@ -1894,6 +2701,9 @@
           <address>
             Prayagraj<br />
             Office : +91 94514517947<br />
+            Coorindator: (Nursery to UKG): +91 8299246981 <br />
+            Coorindator: (Class 1 to 8): +91 8318665770 <br />
+            Coorindator: (Class 9 to 12): +91 9919470055 <br />
             Email : info@newrsj.in
           </address>
         </div>
@@ -1902,11 +2712,24 @@
           <h3>Connect With Us</h3>
           <p>Follow us on social media for updates and news.</p>
           <div class="social-links">
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="Twitter">TW</a>
-            <a href="#" aria-label="Instagram">IG</a>
-            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Map</h3>
+          <img src="images/chhatnag/chhatnag-map.png" height="250" width="250" alt="">
         </div>
       </div>
 
@@ -1915,5 +2738,24 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+      function slowDown() {
+        let video = document.getElementById("video");
+        video.playbackRate = 0.5;
+      }
+      function toggleMonth(monthId) {
+        var content = document.getElementById(monthId);
+        var arrow =
+          content.previousElementSibling.querySelector(".dropdown-arrow");
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          arrow.textContent = "▼"; // Down arrow
+        } else {
+          content.style.display = "block";
+          arrow.textContent = "▲"; // Up arrow
+        }
+      }
+    </script>
   </body>
 </html>

@@ -161,18 +161,22 @@ updateCalendar();
 // js for academic page
 function showAcademicContent(section) {
   // Hide all content sections
-  document.querySelectorAll('.academic-content').forEach(content => {
-      content.style.display = 'none';
+  document.querySelectorAll(".academic-content").forEach((content) => {
+    content.style.display = "none";
   });
 
   // Remove active class from all buttons
-  document.querySelectorAll('.sidebar-nav button').forEach(button => {
-      button.classList.remove('active');
+  document.querySelectorAll(".sidebar-nav button").forEach((button) => {
+    button.classList.remove("active");
   });
 
-  // Show selected content and activate button
-  document.getElementById(`${section}-content`).style.display = 'block';
-  document.querySelector(`button[onclick="showAcademicContent('${section}')"]`).classList.add('active');
+  // Show selected content
+  document.getElementById(`${section}-content`).style.display = "block";
+
+  // Activate the correct button using data attribute
+  document
+    .querySelector(`button[data-section="${section}"]`)
+    .classList.add("active");
 }
 
 // js for accordion
